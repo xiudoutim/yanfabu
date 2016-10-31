@@ -1,0 +1,38 @@
+/*样式重置*/
+*{box-sizing: border-box;padding: 0;margin: 0;}
+body{overflow-x: hidden;}
+html,body,ul,li,ol,dl,dd,dt,p,h1,h2,h3,h4,h5,h6,form,fieldset,legend,img {margin: 0;padding: 0;color: #666666;}
+fieldset,img {border: none;}
+address,caption,cite,code,dfn,th,var {font-style: normal;font-weight: normal;}
+ul,ol,li {list-style: none;}
+a{text-decoration: none;}
+.clearfix:after{content: ".";clear: both;display: block;height: 0;visibility: hidden;}
+input{outline: none;}
+
+
+body{height: 100%;width: 16rem;}
+#tab{height: 2.39rem;width: 16rem;position: absolute;bottom: 0;background: #fbfbfb;border-top: 1px solid #eedee1;}
+#tab li{width: 3.2rem;height: 2.2rem;text-align: center;padding: 5px 0 3px 0;float: left;}
+#tab li a i{display: block;height: 1.2rem;width: 1.3rem;overflow: hidden;margin-left: 1rem;
+		background: url(../img/icon/footer-bg.png) no-repeat;background-size: 5.87rem 2.93rem;}
+#tab li:nth-child(1) i{background-position:-2px -3px;}
+#tab li:nth-child(2) i{background-position: -1.5rem -2px;}
+#tab li:nth-child(4) i{background-position: -3rem -3px;}
+#tab li:nth-child(5) i{background-position: -4.5rem -3px;}
+
+#tab li:nth-child(1) a:hover i{background-position: -2px -1.6rem;}
+#tab li:nth-child(1) a:hover{color: #ca5c45;}
+#tab li:nth-child(2) a:hover i{background-position: -1.5rem -1.5rem;}
+#tab li:nth-child(2) a:hover{color: #ca5c45;}
+#tab li:nth-child(4) a:hover i{background-position: -3rem -1.6rem;}
+#tab li:nth-child(4) a:hover{color: #ca5c45;}
+#tab li:nth-child(5) a:hover i{background-position: -4.5rem -1.6rem;}
+#tab li:nth-child(5) a:hover{color: #ca5c45;}
+
+/*#tab li:nth-child(1) a,#tab li:nth-child(2) a,#tab li:nth-child(4) a,#tab li:nth-child(5) a:hover #tab li:nth-child(3){}*/
+#tab li:nth-child(3) {position: relative;}
+#tab li:nth-child(3) a{display: block;height: 3.2rem;width: 3.2rem;border-top-right-radius: 50%;border-top-left-radius: 50%;
+						background:#e8eced;border: 1px solid #dedede;padding: 0.2rem 0.2rem 0 0.2rem;position: absolute;top: -19px;}
+#tab li a{font-size: 0.56rem;color: #8a8a8a;width: 3.2rem;text-align: center;font-family: '微软雅黑';line-height: 1rem;display: block;}
+#tab li img{height: 2.39rem;width: 2.39rem;border-radius: 50%;}
+

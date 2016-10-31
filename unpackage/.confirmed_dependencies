@@ -1,0 +1,16 @@
+{
+	"index.html": {
+		"resources": [
+			"components/sort/sort.js",
+			"js/libs/angular-route.js",
+			"components/special/special.js",
+			"js/libs/angular-css.min.js",
+			"js/libs/angular.min.js",
+			"components/find/find.js",
+			"app.js",
+			"img/icon/footer-home-logo.png",
+			"components/mine/mine.js",
+			"components/interest/interest.js"
+		]
+	}
+}
