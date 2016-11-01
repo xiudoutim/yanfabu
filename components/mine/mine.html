@@ -1,6 +1,9 @@
-<div>我是mine的html</div>
-<p ng-repeat="x in person" id="mine">
-	<span>{{x.name}}</span>
-	<span>{{x.age}}</span>
-	<button>详情</button>
-</p>
+<div id="wrap_mine">
+	<div class="bounced" ng-hide="bounced_flag">
+		<div class="bounced_top">
+			<h3>系统提示</h3>
+			<p>亲，您尚未登录哦！</p>
+		</div>
+		<a href="#/regist">确定</a>
+	</div>
+</div>

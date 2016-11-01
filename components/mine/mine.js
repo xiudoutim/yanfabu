@@ -6,16 +6,17 @@ app.config(['$routeProvider',function($routeProvider) {
 		controller:'mineCtrl',
 		css:'components/mine/mine.css'
 	})
+	.when('/regist',{
+		templateUrl:'components/mine/regist/regist.html',
+		controller:'registCtrl',
+		css:'components/mine/regist/regist.css'
+	})
 }]);
 
-app.service('service',['$http',function($http){
-	this.get=function(){
-		return $http.get('data/data.json');
-	}
-}])
-
-app.controller('mineCtrl', ['$scope','service', function($scope,service){
-	service.get().success(function(res){
-		$scope.person=res;
-	})
-}])
+app.controller('mineCtrl', ['$scope','$timeout', function($scope,$timeout){
+	$scope.bounced_flag = true;
+	$timeout(function(){
+		$scope.bounced_flag = false;
+	},1000);
+	
+}]);

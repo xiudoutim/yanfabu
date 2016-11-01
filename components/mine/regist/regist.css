@@ -1,0 +1,15 @@
+#wrap_regist{width: 100%;height: 24rem;background: #ececec;}
+#wrap_regist .nav-top{width: 100%;height: 2.217rem;background: #ff4f14;color: #fff;font-weight: normal;padding: 0.1px;}
+#wrap_regist .nav-top a{font-size: 0.905rem;color: #fff;font-weight: bold;margin-left: 10px;line-height: 2.217rem;margin-top: 10px;}
+#wrap_regist .nav-top h2{text-align: center;width: 14.783rem;height: 100%;line-height: 2.217rem;display: inline-block;color: #fff;font-size: 0.9rem;}
+#wrap_regist .regist_logo{width: 100%;height: 6.174rem;padding: 1.74rem 0 0 6.522rem;background: #fff;}
+#wrap_regist .regist_logo img{width: 2.8rem;height: 3rem;}
+#wrap_regist .regist_form{width: 100%;height: 11.8rem;background: #fff;padding: 0 0.52rem;}
+#wrap_regist .regist_form .form_tel{margin-bottom: 0.263rem;}
+#wrap_regist .regist_form .form_tel,#wrap_regist .regist_form .form_pwd{width: 15rem;height: 1.957rem;border: 3px solid #e0e0e0;position: relative;margin-bottom: 0.78rem;}
+#wrap_regist .regist_form .form_tel img,#wrap_regist .regist_form .form_pwd img{width: 1.174rem;height: 1.174rem;margin: 0.2174rem 0 0 0.2174rem;}
+#wrap_regist .regist_form input{position: absolute;top: 0.27rem;left: 1.74rem;height: 1.2rem;width: 13rem;border: none;outline: none;}
+#wrap_regist form a{display: block;}
+#wrap_regist .forget_pwd{color: #f84f14;margin-left: 11rem;font-size: 0.65rem;margin-bottom: 0.7rem;}
+#wrap_regist .login_account{width: 15rem;height: 1.74rem;background: #f84f14;text-align: center;line-height: 1.74rem;font-size: 0.55rem;color: #fff;margin-bottom: 0.65rem;}
+#wrap_regist .new_user{width: 15rem;height: 1.74rem;background: #fff;color: #f84f14;text-align: center;height: 1.74rem;line-height: 1.74rem;font-size: 0.55rem;}

@@ -11,11 +11,11 @@
 	</div>
 	<div class="find-nav">
 		<ul>
-			<li><a href="">精选</a></li>
-			<li><a href="">晒单</a></li>
-			<li><a href="">新品</a></li>
+			<li ng-click="click_change(0)" class="underLine"><a href="">精选</a></li>
+			<li ng-click="click_change(1)"><a href="">晒单</a></li>
+			<li ng-click="click_change(2)"><a href="">新品</a></li>
 		</ul>
-		<a href="">+发布</a>
+		<a>+发布</a>
 	</div>
 	<div class="find_list_content">
 		<div class="find_list_items" ng-repeat="data in selections">
@@ -25,25 +25,60 @@
 				<p>{{data.review_content}}</p>
 				<span>￥{{data.price}}</span>
 			</div>
+			<div class="clearfix"></div>
 			<div class="items_tags">
 				<div>
 					<img src="img/icon2/icon_pencil.png"/>
-					<input type="text" placeholder="精品" />
+					<a href="#/find_second_page_goodProduct">精品</a>
 				</div>
 			</div>
 			<div class="user_information">
 				<img ng-src="{{data.user_info.headimg}}" />
 				<p><img src="img/icon2/boy.png"/><span>{{data.user_info.nickname}}</span></p>
 				<p><img src="img/icon2/icon_clock.png"/><span>{{data.add_time}}</span></p>
+				<img src="img/icon2/dengji1.png" id="find_dengji" />
 			</div>
 			<p>{{data.summary}}</p>
-			<div class="find_adv">{{data.exp_content}}</div>
+			<div class="find_adv">
+				<div id="find_up"></div>
+				{{data.exp_content}}
+			</div>
 			<ul>
 				<li><a href=""><img src="img/icon2/find_share.png"/>分享</a></li>
-				<li><a href=""><img src="../../img/icon2/find_like.png"/>喜欢{{data.fav}}</a></li>
-				<li><a href=""></a></li>
-				<li><a href=""></a></li>
+				<li><a href=""><img src="img/icon2/find_like.png"/>喜欢{{data.fav}}</a></li>
+				<li><a href=""><img src="img/icon2/find_message.png"/>补充</a></li>
+				<li><a href=""><img src="img/icon2/find_shopingCar.png"/>购买</a></li>
+			</ul>
+		</div>
+		<div class="find_list_items" ng-repeat="data2 in selections2" ng-hide="!find_changeFlag">
+			<h2>{{data2.name}}</h2>
+			<img ng-src="{{data2.img_url}}"/>
+			<div class="items_price">
+				<p>{{data2.review_content}}</p>
+				<span>￥{{data2.price}}</span>
+			</div>
+			<div class="clearfix"></div>
+			<div class="items_tags">
+				<div>
+					<img src="img/icon2/icon_pencil.png"/>
+					<a href="#/find_second_page_goodProduct">精品</a>
+				</div>
+			</div>
+			<div class="user_information">
+				<img ng-src="{{data2.user_info.headimg}}" />
+				<p><img src="img/icon2/boy.png"/><span>{{data2.user_info.nickname}}</span></p>
+				<p><img src="img/icon2/icon_clock.png"/><span>{{data2.add_time}}</span></p>
+			</div>
+			<p>{{data2.summary}}</p>
+			<div class="find_adv">{{data2.exp_content}}</div>
+			<ul>
+				<li><a href=""><img src="img/icon2/find_share.png"/>分享</a></li>
+				<li><a href=""><img src="img/icon2/find_like.png"/>喜欢{{data2.fav}}</a></li>
+				<li><a href=""><img src="img/icon2/find_message.png"/>补充</a></li>
+				<li><a href=""><img src="img/icon2/find_shopingCar.png"/>购买</a></li>
 			</ul>
 		</div>
 	</div>
+	
+	<a href="" id="find_btn-load-more" ng-click="find_changeFlag = !find_changeFlag" ng-hide="find_changeFlag" ><span></span>点击加载更多</a>
 </div>
