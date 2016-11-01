@@ -1,0 +1,27 @@
+<div id="sousuoPage">
+	<div id="sousuoPage_title">
+		<div id="allSortName" ng-click="backSort()">
+			<i class="fa fa-th"></i>
+			<span>类别</span>
+		</div>
+		<div id='sousuoPage_input'>
+			<img src="img/icon/search.png"/>
+			<input type="text" placeholder="所搜您喜欢的专题或商品" />
+			<span>搜索</span>
+		</div>
+	</div>
+	<div id="hot_product" ng-controller="sousuoPageCtrl">
+		<h2>热门搜索</h2>
+		<ul>
+			<li ng-repeat="x in sousuoPageArr">{{x.keywords}}</li>
+		</ul>
+	</div>
+	<div id="sousuo_history">
+		<h2>搜索历史</h2>
+		<ul></ul>
+	</div>
+	<div id="clearHistory">
+		<img src="img/icon/deleteimg.png" />
+		<span>清除搜索历史</span>
+	</div>
+</div>

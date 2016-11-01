@@ -1,0 +1,21 @@
+#sousuoPage{width: 16rem;height: 19.2rem;background: #ececec;}
+#sousuoPage_title{height: 2.34rem;width: 16rem;background: #ff5011;padding: 0.32rem 0.32rem 0 0;}
+#allSortName{height: 1.73rem;width: 2.6rem;text-align: center;float: left;margin-top: 0.2rem;}
+#allSortName i,#allSortName span{display: block;}
+#allSortName{font-size: 0.6rem;color: #fff;font-family: "微软雅黑";}
+#sousuoPage_input{height: 1.73rem;width: 12.95rem;background: #fff;border: 4px solid #fda58d;
+			border-radius: 2px;float: right;position: relative;}
+#sousuoPage_input img{height: 0.87rem;width: 0.87rem;line-height: 1.73rem;position: absolute;left: 0.4rem;top: 0.2rem;}
+#sousuoPage_input input{height: 1.39rem;width: 9.13rem;border: none;display: inline-block;line-height: 1.39rem;
+				padding: 0 0 0 1.8rem;font-family: "微软雅黑";}
+#sousuoPage_input span{font-size: 0.61rem;color: #ffedbf;font-family: "微软雅黑";width: 1.82rem;height: 1.39rem;
+				background: #ff4e0c;line-height: 1.39rem;text-align: center;position: absolute;right: 0;}
+#hot_product,#sousuo_history{font-size: 0.65rem;color: #828186;font-family: "微软雅黑";padding: 0.5rem 0 0.78rem 0;background: #fff;
+			border-top: 1px solid #cacaca;border-bottom: 1px solid #cacaca;}				
+#hot_product li,#sousuo_history li{display: inline-block;padding: 0.43rem 0.69rem;border: 1px solid #dbdbdb;background: #f9f9f9;
+				margin: 0.43rem 0 0 0.43rem;}
+#sousuo_history{margin-top: 0.65rem;}
+#hot_product h2,#sousuo_history h2{color: #6c655d;font-size: 0.65rem;font-weight: normal;margin-left: 0.69rem;height: 1rem;line-height: 1rem;}
+#clearHistory{height: 1.52rem;width: 16rem;background: #f8f8f8;border-bottom: 1px solid #c6c6c6;text-align: center;font-size: 0.5rem;
+				font-family: "微软雅黑";line-height: 1.52rem;}
+#clearHistory img{height: 0.87rem;width: 0.65rem;vertical-align: middle;}

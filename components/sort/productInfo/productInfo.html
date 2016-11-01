@@ -1,0 +1,30 @@
+<div id="productInfo" ng-controller="productInfoCtrl">
+	<div id="productInfo_title">
+		<div id="goProductSort" ng-click="backSort()">
+			<i class="fa fa-angle-left"></i>
+		</div>
+		<div id='productInfo_input'>
+			<img src="img/icon/search.png"/>
+			<input type="text" placeholder="所搜您喜欢的专题或商品" />
+			<span>搜索</span>
+		</div>
+	</div>
+	<div id="goBackSort" ng-click='backSort()'><i class="fa fa-th"></i>{{productSortName.name}}</div>
+	<div id="sort_productInfo">
+		<ul>
+			<li ng-repeat="y in productInfoArr">
+				<img src="{{y.img_url}}">
+				<div><span class="now_price">￥{{y.price}}</span><span class="old_price">￥{{y.market_price}}</span></div>
+				<p class="interest_product_name">{{y.name}}</p>
+			</li>
+		</ul>
+		<ul>
+			<li ng-repeat="z in productInfoArr2">
+				<img src="{{z.img_url}}">
+				<div><span class="now_price">￥{{z.price}}</span><span class="old_price">￥{{z.market_price}}</span></div>
+				<p class="interest_product_name">{{z.name}}</p>
+			</li>
+		</ul>
+	</div>
+	<div class="getMore" ng-show="getMore" ng-click="getMoreProduct()"><i class="fa fa-th"></i>点击加载更多</div>
+</div>

@@ -1,12 +1,17 @@
 <div id="sort_page">
 	<div id="sort_title">
-		<a href=""><input type="text" name="" placeholder="所搜您喜欢的专题或商品"></a>
+		<a href="#/sousuoPage"><input type="text" name="" placeholder="所搜您喜欢的专题或商品" readonly="readonly"></a>
 		<span><img src="img/icon/search.png"></span>
 	</div>
 
-	<div id="sort_item">
+	<div id="sort_item" ng-controller="sortCtrl">
 		<ul>
-			<li ng-repeat="x in sortArr"><a href=""><img src="{{x.icon}}"><span>{{x.name}}</span></a></li>
+			<li ng-repeat="x in sortArr">
+				<a href="#/productInfo" ng-click='setId(x.id)'>
+					<img src="{{x.icon}}">
+					<span>{{x.name}}</span>
+				</a>
+			</li>
 		</ul>
 		<div class="clearfix"></div>
 		<div class="sort_bg"></div>
