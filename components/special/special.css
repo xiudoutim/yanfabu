@@ -1,2 +1,18 @@
-.special_top{height: 2.17rem;width: 16rem;background: #ff4f14;
-			text-align: center;color: #f7efed;font-size: 0.85rem;line-height: 2.17rem;}
+#wrap_special{background: #ececec;width: 100%;}
+#wrap_special .swiper-container {width: 100%;height: 7.6087rem;}
+#wrap_special .swiper-container img{width: 100%;height: 100%;}
+#wrap_special .nav-top{width: 100%;height: 2.217rem;background: #ff4f14;color: #fff;font-weight: normal;padding: 0.1px;}
+#wrap_special .nav-top a{font-size: 0.905rem;color: #fff;font-weight: bold;margin-left: 10px;line-height: 2.217rem;margin-top: 10px;}
+#wrap_special .nav-top h2{text-align: center;width: 14.783rem;height: 100%;line-height: 2.217rem;display: inline-block;color: #fff;font-size: 0.9rem;}
+#wrap_special #hot-sell{width: 100%;height: 3.83rem;overflow-x: hidden;margin-top: 0.4348rem;margin-bottom: 0.6087rem;}
+#wrap_special #hot-sell img{float: left;margin-right: 0.348rem;width: 3.826rem;height: 100%;}
+#wrap_special #hot-sell img:last-child{margin-right: 0;}
+#wrap_special #hot-sell .pic{width: 41.74rem;height: 100%;}
+#wrap_special #btn-load-more{display: block;width: 15.14rem;margin: 0 0.348rem 0.6087rem 0.348rem;background: #f8f8f8;height: 1.826rem;line-height: 1.826rem;color: #979797;font-size: 0.6609rem;margin-bottom: 2.97rem;}
+#wrap_special #btn-load-more span{display: inline-block;width: 0.5704rem;height: 0.5704rem;background: url(../../img/icon/more-icon.png) no-repeat;background-size: 100% 100%;margin-left: 5.48rem;margin-right: 8px;}
+#wrap_special #data-pic{width: 100%;}
+#wrap_special #data-pic li{width: 15.113rem;height: 8.1169rem;margin: 0 0.348rem;text-align: center;background: #fff;margin-bottom: 0.435rem;border: 1px solid #d9d9d9;position: relative;}
+#wrap_special #data-pic li img{width: 14.87rem;height: 6.726rem;margin-bottom: 3px;margin-top: 3px;}
+#wrap_special #data-pic li p{width: 100%;text-align: left;padding-left: 0.4174rem;color: #565656;font-size: 0.6087rem;font-weight: 400;}
+#wrap_special #data-pic .special_icon{width: 2.826rem;height: 2.826rem;position: absolute;top: 0;left: 0;}
+#wrap_special #data-pic .special_praise{position: absolute;top: 10px;right: 10px;width: 1.913rem;height: 2.4783rem;background: url(../../img/icon/icon2.png) no-repeat;background-size: 100% 100%;padding-top: 1.7rem;font-size: 0.44rem;color: #fff;}

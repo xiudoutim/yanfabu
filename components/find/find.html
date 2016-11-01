@@ -1,5 +1,49 @@
-<div>我是find的html</div>
-<p ng-repeat="x in person" id="find">
-	<span>{{x.name}}</span>
-	<span>{{x.age}}</span>
-</p>
+<div id="wrap_find">
+	<div id="find-top">
+		<img src="img/banner1/find-banner-1.jpg" />
+	</div>
+	<div id="find-other-item">
+		<ul>
+			<li ng-repeat="url in year">
+				<img  ng-src="{{url.img_url}}" />
+			</li>
+		</ul>
+	</div>
+	<div class="find-nav">
+		<ul>
+			<li><a href="">精选</a></li>
+			<li><a href="">晒单</a></li>
+			<li><a href="">新品</a></li>
+		</ul>
+		<a href="">+发布</a>
+	</div>
+	<div class="find_list_content">
+		<div class="find_list_items" ng-repeat="data in selections">
+			<h2>{{data.name}}</h2>
+			<img ng-src="{{data.img_url}}"/>
+			<div class="items_price">
+				<p>{{data.review_content}}</p>
+				<span>￥{{data.price}}</span>
+			</div>
+			<div class="items_tags">
+				<div>
+					<img src="img/icon2/icon_pencil.png"/>
+					<input type="text" placeholder="精品" />
+				</div>
+			</div>
+			<div class="user_information">
+				<img ng-src="{{data.user_info.headimg}}" />
+				<p><img src="img/icon2/boy.png"/><span>{{data.user_info.nickname}}</span></p>
+				<p><img src="img/icon2/icon_clock.png"/><span>{{data.add_time}}</span></p>
+			</div>
+			<p>{{data.summary}}</p>
+			<div class="find_adv">{{data.exp_content}}</div>
+			<ul>
+				<li><a href=""><img src="img/icon2/find_share.png"/>分享</a></li>
+				<li><a href=""><img src="../../img/icon2/find_like.png"/>喜欢{{data.fav}}</a></li>
+				<li><a href=""></a></li>
+				<li><a href=""></a></li>
+			</ul>
+		</div>
+	</div>
+</div>

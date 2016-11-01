@@ -10,12 +10,25 @@ app.config(['$routeProvider',function($routeProvider) {
 
 app.service('service2',['$http',function($http){
 	this.get=function(){
-		return $http.get('data/data.json');
+		return $http.get('data/findMainData1.json');
 	}
 }])
-
-app.controller('findCtrl', ['$scope','service2', function($scope,service2){
+app.service("ser_find1",['$http',function($http){
+	this.get = function(){
+		return $http.get('data/findMainData2.json');
+	}
+}]);
+app.controller('findCtrl',['$scope','service2','ser_find1',function($scope,service2,ser_find1){
+	$scope.find_changeFlag = 0;
+    $scope.bered = function(i) {
+        $scope.find_changeFlag = i;
+    };
 	service2.get().success(function(res){
-		$scope.person=res;
+		$scope.year = res;
+	})
+	//精选部分数据
+	ser_find1.get().success(function(res){
+		$scope.selections = res.discover_list;
+		console.log($scope.selections);
 	})
 }])

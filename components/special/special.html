@@ -1,1 +1,43 @@
-<h2 class="special_top">专题</h2>
+<div id="wrap_special">
+	<div class="nav-top"><a href=""><</a><h2>专题</h2></div>
+	<div class="swiper-container">
+	  <div class="swiper-wrapper">
+	    <div class="swiper-slide" ng-repeat="banner in banners"><img ng-src="{{banner.img_url}}"/></div>
+	  </div>
+	  <div class="swiper-pagination"></div>
+	</div>
+	<div id="hot-sell">
+		<div class="pic">
+			<img src="img/banner2/1.jpg" alt="" />
+			<img src="img/banner2/2.jpg" alt="" />
+			<img src="img/banner2/3.jpg" alt="" />
+			<img src="img/banner2/4.jpg" alt="" />
+			<img src="img/banner2/5.jpg" alt="" />
+			<img src="img/banner2/6.jpg" alt="" />
+			<img src="img/banner2/7.jpg" alt="" />
+			<img src="img/banner2/8.jpg" alt="" />
+			<img src="img/banner2/9.jpg" alt="" />
+			<img src="img/banner2/10.jpg" alt="" />
+		</div>
+	</div>
+	<div id="data-pic">
+		<ul class="special_ul1">
+			<li ng-repeat="x in special">
+				<img ng-src="{{x.img_url}}"/>
+				<p ng-bind="x.name"></p>
+				<img class="special_icon" ng-src="{{x.icon_url}}"/>
+				<span class="special_praise">{{x.favors}}</span>
+			</li>
+		</ul>
+		<ul class="special_ul2" ng-hide="special_flag">
+			<li ng-repeat="y in special2">
+				<img ng-src="{{y.img_url}}"/>
+				<p ng-bind="y.name"></p>
+				<img class="special_icon" ng-src="{{y.icon_url}}"/>
+				<span class="special_praise">{{y.favors}}</span>
+			</li>
+		</ul>
+	</div>
+	<div class="clearfix"></div>
+	<a href="" id="btn-load-more" ng-click="special_flag=!special_flag" ng-hide="!special_flag"><span></span>点击加载更多</a>
+</div>
