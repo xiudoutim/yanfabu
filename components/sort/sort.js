@@ -8,14 +8,14 @@ app.config(['$routeProvider',function($routeProvider) {
 	})
 }]);
 
-app.service('service',['$http',function($http){
+app.service('service4',['$http',function($http){
 	this.get=function(){
-		return $http.get('data/data.json');
+		return $http.get('data/sort.json');
 	}
 }])
 
-app.controller('sortCtrl', ['$scope','service', function($scope,service){
+app.controller('sortCtrl', ['$scope','service4', function($scope,service){
 	service.get().success(function(res){
-		$scope.person=res;
+		$scope.sortArr=res.list;
 	})
 }])

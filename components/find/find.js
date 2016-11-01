@@ -8,14 +8,14 @@ app.config(['$routeProvider',function($routeProvider) {
 	})
 }]);
 
-app.service('service',['$http',function($http){
+app.service('service2',['$http',function($http){
 	this.get=function(){
 		return $http.get('data/data.json');
 	}
 }])
 
-app.controller('findCtrl', ['$scope','service', function($scope,service){
-	service.get().success(function(res){
+app.controller('findCtrl', ['$scope','service2', function($scope,service2){
+	service2.get().success(function(res){
 		$scope.person=res;
 	})
 }])

@@ -1,7 +1,89 @@
 <div id="interestPage">
-	<div id="interestBanner" ng-repeat="x in arr">
-		{{x.img}}
+	<div class="swiper-container">
+		<div class="swiper-wrapper">
+			<div ng-repeat="x in arr" class="swiper-slide">
+				<img ng-src="{{x.img_url}}">
+			</div>
+		</div>
+		<div class="swiper-pagination"></div>
 	</div>
-	<div></div>
 	<div class="backGround1"></div>
+<!-- 年货大促部分 -->
+	<div id="promotion">
+		<div id="bigPromotion">
+			<ul>
+				<li><a href="#"><img src="img/pai-pic.jpg"></a></li>
+				<li><a href="#"><img src="img/mall-pic.jpg"></a></li>
+			</ul>
+		</div>
+		<div id="bigPromotion_bottom"><img src="img/icon/nianhuo-icon.png"><span
+		>年货大促</span></div>
+		<div class="interest_blankBg"></div>
+		<div class="getMore"><i class="fa fa-th"></i>点击加载更多</div>
+	</div>
+
+	<div id="interest_listTop">
+		<ul>
+			<li><a href=""><i></i><span>元爆款</span></a></li>
+			<li><a href=""><i></i><span>元慧品</span></a></li>
+			<li><a href=""><i></i><span>元专区</span></a></li>
+		</ul>
+	</div>
+<!-- 9.9专区 -->
+	<div id="interest_money_nine">
+		<h2 class="interest_allListTitle">
+			<span class="interest_clock"></span>
+			<span class="interest_price">{{arr1Top.name}}</span>
+			<span class="interest_time">{{arr1Top.headline}}</span>
+		</h2>
+		<img src="{{arr1Top.img_url}}">
+		<ul class="interest_product_list">
+			<li ng-repeat="x in arr1">
+				<img src="{{x.img_url}}">
+				<div><span class="now_price">￥{{x.price}}</span><span class="old_price">￥{{x.market_price}}</span></div>
+				<p class="interest_product_name">{{x.name}}</p>
+			</li>
+		</ul>
+		<div class="getMore"><i class="fa fa-th"></i>点击加载更多</div>
+	</div>
+<!-- 19.9专区 -->
+	<div id="interest_money_nineteen">
+		<h2 class="interest_allListTitle">
+			<span class="interest_clock"></span>
+			<span class="interest_price">{{arr2Top.name}}</span>
+			<span class="interest_time">{{arr2Top.headline}}</span>
+		</h2>
+		<img src="{{arr2Top.img_url}}">
+		<ul class="interest_product_list">
+			<li ng-repeat="x in arr2">
+				<img src="{{x.img_url}}">
+				<div><span class="now_price">￥{{x.price}}</span><span class="old_price">￥{{x.market_price}}</span></div>				<p class="interest_product_name">{{x.name}}</p>
+			</li>
+		</ul>
+		<div class="getMore"><i class="fa fa-th"></i>点击加载更多</div>
+	</div>
+<!-- 29.9专区 -->
+	<div id="interest_money_twentyNine">
+		<h2 class="interest_allListTitle">
+			<span class="interest_clock"></span>
+			<span class="interest_price">{{arr3Top.name}}</span>
+			<span class="interest_time">{{arr3Top.headline}}</span>
+		</h2>
+		<ul>
+			<li ng-repeat="x in arr3">
+				<dl>
+					<dt>
+						<img src="{{x.img_url}}">
+					</dt>
+					<dd>
+						<p>{{x.name}}</p>	
+						<span class="nowPrice">￥{{x.price}}</span>
+						<span class="oldPrice">￥{{x.market_price}}</span>
+						<div class="Productdiscount"><span>{{x.discount}}折</span><i>抢</i></div>
+					</dd>
+				</dl>
+			</li>
+		</ul>
+		<div class="getMore"><i class="fa fa-th"></i>点击加载更多</div>
+	</div>
 </div>

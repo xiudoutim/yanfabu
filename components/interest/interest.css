@@ -1,3 +1,70 @@
-#interestPage{height: 100%;width: 16rem;}
-#interestBanner{height: 7.69rem;width: 16rem;background: red;}
+#interestPage{height: 100%;width: 16rem;overflow-y: scroll;}
+#interestPage .swiper-container{height: 7.65rem;width: 16rem;overflow: hidden;}
+#interestPage .swiper-slide img{height: 7.65rem;width: 16rem;}
 .backGround1{background: url(../../img/banner/backGround1.jpg) repeat;height: 1.39rem;width: 16rem;}
+#promotion{height:9.43rem;width: 16rem;background: url(../../img/icon/nian-bg.png) repeat;}
+#bigPromotion ul{height: 4.69rem;width: 16rem;}
+#bigPromotion ul li{float: left;height: 4.69rem;width: 50%;}
+#bigPromotion ul li img{height: 100%;width: 100%;}
+#bigPromotion_bottom{height: 1.52rem;width: 16rem;line-height: 1.52rem;padding-left: 0.45rem;}
+#bigPromotion_bottom span{font-size: 0.65rem;color: white;font-family: '微软雅黑';line-height: 1.52rem;margin-left: 0.1rem;}
+#bigPromotion_bottom>img{height: 0.74rem;width: 0.74rem;vertical-align: middle;}
+.interest_blankBg{height: 0.47rem;width: 16rem;background: #fff;}
+.getMore{height: 1.9rem;width: 16rem;background: #f8f8f8;font-size: 0.6rem;color: #b3b3b3;font-family: '微软雅黑';
+		line-height: 1.9rem;text-align: center;border-top: 1px solid #efefef;border-bottom: 1px solid #efefef;}
+.getMore i{margin-right: 0.2rem;}
+#interest_listTop{height: 2.17rem;width: 16rem;border-bottom: 1px solid #dcdcdc;background: #fff;}
+#interest_listTop ul{height: 100%;width: 100%;padding:0.2rem 0;}
+#interest_listTop ul li{height: 1.69rem;width: 33.3%;float: left;text-align: center;border-right: 1px solid #bfbfbf;}
+#interest_listTop ul li i{height: 1rem;width: 2rem;background: url(../../img/icon/tag-tit.png) no-repeat;
+			display: inline-block;background-size: 6rem 1rem;vertical-align: middle;}
+#interest_listTop ul li:nth-child(1) i{background-position: 0 0;}
+#interest_listTop ul li:nth-child(2) i{background-position: -2rem 0;}
+#interest_listTop ul li:nth-child(3) i{background-position: -4rem 0;}
+#interest_listTop ul li a span{font-size: 0.69rem;color: #767676;font-family: '微软雅黑';line-height: 1.69rem;}
+
+
+#interest_money_nine{width: 16rem;}
+#interest_money_nine>img{height: 4.78rem;width: 16rem;}
+.interest_allListTitle{font-size: 0.61rem;height: 1.43rem;line-height: 1.43rem;background:#ededed;font-family: '微软雅黑';padding-left: 0.6rem;}
+.interest_allListTitle span{display: inline-block;}
+#interest_money_nine .interest_allListTitle .interest_clock{height: 0.76rem;width: 0.74rem;vertical-align: middle;background: url(../../img/icon/time-clock.png) no-repeat 0 -2px;
+					overflow: hidden;background-size: 2.22rem 0.76rem;}
+#interest_money_nineteen .interest_allListTitle .interest_clock{height: 0.76rem;width: 0.74rem;vertical-align: middle;background: url(../../img/icon/time-clock.png) no-repeat;
+					overflow: hidden;background-size: 2.22rem 0.76rem;background-position: -0.74rem 0;}
+#interest_money_twentyNine .interest_allListTitle .interest_clock{height: 0.76rem;width: 0.74rem;vertical-align: middle;background: url(../../img/icon/time-clock.png) no-repeat;
+					overflow: hidden;background-size: 2.22rem 0.76rem;background-position: -1.48rem 0;}
+.interest_price{color: #e07178;margin-right: 0.39rem;}
+.interest_time{color: #aaaaa8;}
+.interest_product_list li{padding:;display: inline-block;width: 4.86rem;height: 8rem;font-size: 0.56rem;font-family: '微软雅黑';
+			color: #6e6a67;margin:0.33rem 0.2rem;overflow-y: hidden;}
+.interest_product_list li img{height: 4.82rem;width: 4.82rem;}
+.now_price{height: 1.17rem;width: 1.66rem;background:url(../../img/icon/pri-bg.png) no-repeat;display: inline-block;
+				background-size: 1.66rem 1.17rem;font-size: 0.65rem;color: #fff;text-align: center;line-height: 1.17rem;}
+.old_price{color: #736e6a;text-decoration: line-through;float: right;line-height: 1.17rem;}
+.interest_product_name{line-height: 1rem;}
+
+
+#interest_money_nineteen{width: 16rem;}
+#interest_money_nineteen>img{height: 4.78rem;width: 16rem;}
+#interest_money_nineteen .now_price{width: 2.2rem;height: 1.17rem;text-align: center;line-height: 1.17rem;background:url(../../img/icon/pri-bg.png) no-repeat;
+	display: inline-block;background-size: 2.2rem 1.17rem;font-size: 0.65rem;color: #fff;}
+
+
+#interest_money_twentyNine li{height: 6.8rem;width: 16rem;border-bottom: 1px solid #efefef;}
+#interest_money_twentyNine li dl{height: 100%;width: 100%;padding:0.65rem 0 0.48rem 0.48rem;}
+#interest_money_twentyNine dl dt{height: 5.65rem;width: 5.65rem;display: inline-block;float: left;}
+#interest_money_twentyNine dl dd{height: 5.65rem;width: 9.5rem;padding: 0 0.46rem 0.61rem 0.46rem;display: inline-block;}
+#interest_money_twentyNine dl dt img{height: 100%;width: 100%;}
+#interest_money_twentyNine dl dd{font-size: 0.6rem;}
+#interest_money_twentyNine dl dd p{line-height: 1rem;margin-bottom: 1.21rem;font-family:'微软雅黑';}
+#interest_money_twentyNine dl dd .nowPrice{width: 2.34rem;height: 1.17rem;text-align: center;line-height: 1.17rem;
+					font-size: 0.65rem;color: #d9636f;background:none;}
+#interest_money_twentyNine dl dd .oldPrice{margin-left: 0.46rem;color: #736e6a;text-decoration: line-through;line-height: 1.17rem;font-size: 0.39rem;}
+#interest_money_twentyNine dl dd .Productdiscount{display: block;margin-top: 0.5rem;}
+#interest_money_twentyNine dl dd .Productdiscount span{width: 1.74rem;height: 1.56rem;text-align: center;line-height: 1.56rem;background:url(../../img/icon/pri-bg.png) no-repeat;
+	display: inline-block;background-size: 1.74rem 1.56rem;font-size: 0.65rem;color: #fff;font-weight: bold;border-top: 1px solid #c75674;
+	border-left: 1px solid #c75674;border-bottom: 1px solid #c75674;float: left;}
+#interest_money_twentyNine dl dd .Productdiscount i{display: inline-block;height: 1.56rem;border-top:1px solid #c75674;border-bottom: 1px solid #c75674;
+					border-right:1px solid #c75674;line-height: 1.56rem;width: 1.74rem;text-align: center;font-size: 0.65rem;color: #b2534f;}
+#interest_money_twentyNine .getMore{margin-bottom: 2.6rem;}
