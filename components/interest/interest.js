@@ -7,9 +7,9 @@ app.config(['$routeProvider',function($routeProvider) {
 		css:'components/interest/interest.css'
 	})
 	.when('/getMorePage1',{
-		templateUrl:'components/interest/getMorePage/getMorePage.html',
+		templateUrl:'components/interest/getMorePage1/getMorePage1.html',
 		controller:'getMorePageCtrl',
-		css:'components/interest/getMorePage/getMorePage.css'
+		css:'components/interest/getMorePage1/getMorePage1.css'
 	})
 	.when('/getMorePage2',{
 		templateUrl:'components/interest/getMorePage/getMorePage.html',
@@ -106,8 +106,6 @@ app.controller('getMorePageCtrl',['$scope','serviceMore','swiper','$timeout',fun
 			$scope.interestGetMoreTitle=res.info;
 			$scope.interestGetMoreBanner=res.banner_list;
 			$scope.interestGetMoreProduct=res.item_list;
-		}else{
-			console.log(res);
 		}
 	})	
 	
@@ -126,6 +124,19 @@ app.controller('getMorePageCtrl',['$scope','serviceMore','swiper','$timeout',fun
 		window.history.back();
 	}
 	
+}])
+
+app.service('serviceMore1',['$http',function($http){
+	this.get=function(){
+		return $http.get('data/interestproductMore1.json');
+	}
+}])
+
+app.controller('getMorePageCtrl1',['$scope','serviceMore1',function($scope,service){
+	service.get().success(function(res){
+		$scope.interestGetMoreTitle1=res.special_info;
+		$scope.interestGetMoreProduct1=res.special_item_list;
+	})
 }])
 
 
