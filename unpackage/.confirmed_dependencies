@@ -10,7 +10,15 @@
 			"app.js",
 			"img/icon/footer-home-logo.png",
 			"components/mine/mine.js",
-			"components/interest/interest.js"
+			"components/interest/interest.js",
+			"js/libs/jquery-2.2.3.js",
+			"js/commen.js",
+			"js/libs/swiper-3.3.1.min.js",
+			"components/sort/sousuoPage/sousuoPage.js",
+			"img/icon/footer-bg.png",
+			"css/commen.css",
+			"css/swiper-3.3.1.min.css",
+			"css/reset.css"
 		]
 	}
 }

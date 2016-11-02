@@ -6,7 +6,28 @@ app.config(['$routeProvider',function($routeProvider) {
 		controller:'interestCtrl',
 		css:'components/interest/interest.css'
 	})
+	.when('/getMorePage1',{
+		templateUrl:'components/interest/getMorePage/getMorePage.html',
+		controller:'getMorePageCtrl',
+		css:'components/interest/getMorePage/getMorePage.css'
+	})
+	.when('/getMorePage2',{
+		templateUrl:'components/interest/getMorePage/getMorePage.html',
+		controller:'getMorePageCtrl',
+		css:'components/interest/getMorePage/getMorePage.css'
+	})
+	.when('/getMorePage3',{
+		templateUrl:'components/interest/getMorePage/getMorePage.html',
+		controller:'getMorePageCtrl',
+		css:'components/interest/getMorePage/getMorePage.css'
+	})
+	.when('/getMorePage4',{
+		templateUrl:'components/interest/getMorePage/getMorePage.html',
+		controller:'getMorePageCtrl',
+		css:'components/interest/getMorePage/getMorePage.css'
+	})
 }]);
+
 
 app.service('service3',['$http',function($http){
 	this.get=function(){
@@ -26,20 +47,7 @@ app.factory('swiper', function(){
 	return mySwiper;
 })
 
-app.factory('scroll',function(){
-	return{
-		scrollToTop:function(){
-			window.addEventlistener('scroll',function(){
-				if(document.body.scrollBottom>18.52){
-					$('#interest_listTop').css({
-						position:'fixed',
-						top:0
-					})
-				}
-			})
-		}
-	}
-})
+var clickNumber;
 app.controller('interestCtrl',['$scope','service3','swiper','$timeout',function($scope,service,swiper,$timeout){
 	service.get().success(function(res){
 		$scope.arr=res.banner_list;
@@ -52,12 +60,56 @@ app.controller('interestCtrl',['$scope','service3','swiper','$timeout',function(
 	})
 	
 	//点击获取更多得到当前下标值
-	//var clicknumber;
-//		$scope.interestGetMore=function(num){
-//			clicknumber=num;
-//			$scope.interestGo=false;
-//			$scope.interestGetMore=true;
-//		}
+		$scope.interestGetMore=function(num){
+			clickNumber=num;
+			console.log(clickNumber);
+		}
+	
+		$timeout(function(){
+			var mySwiper=new Swiper('.swiper-container',{
+				autoplay:2000,
+				loop:true,
+				autoplayDisableOnInteraction:false,
+			    // 如果需要分页器
+			    pagination: '.swiper-pagination'
+			})
+		},100)
+
+	//当滑动滚动条时，滑动到一定的距离来控制topPrice的显示与隐藏
+		$(window).on('scroll',function(){
+		  	var toTop=$('body').scrollTop()/23;
+	        if(toTop>16){
+		        $('#topPrice').css({
+		        	display:'block'
+		        })
+	        }else{
+				$('#topPrice').css({
+			        display:'none'
+			    })
+	        }
+	      })
+}])
+
+//获取更多的二级页面
+app.service('serviceMore',['$http',function($http){
+	this.get=function(){
+		return $http.get('data/interestproductMore'+clickNumber+'.json');
+
+	}
+}])
+
+app.controller('getMorePageCtrl',['$scope','serviceMore','swiper','$timeout',function($scope,service,swiper,$timeout){
+	service.get().success(function(res){		
+//		获取更多的页面的数据
+		if(clickNumber!=1){
+			document.getElementById("interestMoreclock").style.backgroundPositionX=0;
+			$scope.interestGetMoreTitle=res.info;
+			$scope.interestGetMoreBanner=res.banner_list;
+			$scope.interestGetMoreProduct=res.item_list;
+		}else{
+			console.log(res);
+		}
+	})	
 	
 	$timeout(function(){
 		var mySwiper=new Swiper('.swiper-container',{
@@ -68,57 +120,17 @@ app.controller('interestCtrl',['$scope','service3','swiper','$timeout',function(
 		    pagination: '.swiper-pagination'
 		})
 	},100)
-
-	  $(window).on('scroll',function(){
-	  	var toTop=$('body').scrollTop()/23;
-        if(toTop>20){
-          $('#interest_listTop').css({
-            position:'fixed',
-            top:0
-          })
-        }
-      })
+	
+	//控制上方的返回键
+	$scope.backSort=function(){
+		window.history.back();
+	}
+	
 }])
 
-//二级页面
-//app.service('service3',['$http',function($http){
-//	this.get=function(){
-//		return $http.get('data/interest.json');
-//	}
-//}])
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-//var interestGetMoreArr1=[];
-//var interestGetMoreArr2=[];
-//var interestGetMoreArr3=[];
-//var interestGetMoreArr4=[];
-//
-//app.service('serviceMore',['$http',function($http){
-//	this.get=function(){
-////		return $http.get('data/interestproductMore'+clicknumber+'.json');
-//		return $http.get('data/interestproductMore1.json');
-//	}
-//}])
-//app.controller('interestGetMoreCtrl',['$scope','serviceMore',function($scope,service){
-//	service.get().success(function(res){		
-////		获取更多的页面的数据
-//		$scope.interestGetMoreTitle=res.info;
-//	})
-//		
-//}])
 
 
 
