@@ -1,0 +1,36 @@
+/*加载更多页面样式*/
+#interestGetMorePage{height: 100%;width: 16rem;}
+#interestGetMorePage_title{height: 2.34rem;width: 16rem;background: #ff5011;padding: 0.32rem 0.32rem 0 0;}
+#goInterest{height: 1.73rem;width: 2.6rem;text-align: center;float: left;margin-top: 0.2rem;font-size: 1.2rem;color: #fff;}
+#goInterest i{display: block;}
+#interestGetMorePage_title h2{font-size: 0.77rem;color: #fff;font-family: "微软雅黑";line-height: 2rem;font-weight: normal;width: 13rem;text-align: center;}
+#interestGetMorePage .interest_listTop{height: 2.17rem;width: 16rem;border-bottom: 1px solid #dcdcdc;background: #fff;}
+#interestGetMorePage .interest_listTop ul{height: 100%;width: 100%;padding:0.2rem 0;}
+#interestGetMorePage .interest_listTop ul li{height: 1.69rem;width: 33.3%;float: left;text-align: center;border-right: 1px solid #bfbfbf;}
+#interestGetMorePage .interest_listTop ul li i{height: 1rem;width: 2rem;background: url(../../../img/icon/tag-tit.png) no-repeat;
+			display: inline-block;background-size: 6rem 1rem;vertical-align: middle;}
+#interestGetMorePage .interest_listTop ul li:nth-child(1) i{background-position: 0 0;}
+#interestGetMorePage .interest_listTop ul li:nth-child(2) i{background-position: -2rem 0;}
+#interestGetMorePage .interest_listTop ul li:nth-child(3) i{background-position: -4rem 0;}
+#interestGetMorePage .interest_listTop ul li a span{font-size: 0.69rem;color: #767676;font-family: '微软雅黑';line-height: 1.69rem;}
+
+#interestGetMorePage .swiper-container{height: 7.5rem;width: 16rem;overflow: hidden;}
+#interestGetMorePage .swiper-slide img{height: 7.5rem;width: 16rem;}
+
+#interestGetMorePageInfo{width: 16rem;}
+.interest_allListTitle{font-size: 0.61rem;height: 1.43rem;line-height: 1.43rem;background:#ededed;font-family: '微软雅黑';padding-left: 0.6rem;}
+.interest_allListTitle span{display: inline-block;}
+.interest_allListTitle .interest_clock{height: 0.76rem;width: 0.74rem;vertical-align: middle;background: url(../../../img/icon/time-clock.png) no-repeat;
+					overflow: hidden;background-size: 2.22rem 0.76rem;background-position-y: 0;}
+.interest_price{color: #e07178;margin-right: 0.39rem;}
+.interest_time{color: #aaaaa8;}
+.interest_product_list{margin-bottom: 2.6rem;}
+.interest_product_list li{padding:;display: inline-block;width: 4.86rem;height: 8rem;font-size: 0.56rem;font-family: '微软雅黑';
+			color: #6e6a67;margin:0.33rem 0.2rem;overflow-y: hidden;}
+.interest_product_list li img{height: 4.82rem;width: 4.82rem;}
+.now_price{height: 1.17rem;background:url(../../../img/icon/pri-bg.png) no-repeat;display: inline-block;
+				font-size: 0.65rem;color: #fff;text-align: center;line-height: 1.17rem;}
+.old_price{color: #736e6a;text-decoration: line-through;float: right;line-height: 1.17rem;}
+.interest_product_name{line-height: 1rem;}
+
+
