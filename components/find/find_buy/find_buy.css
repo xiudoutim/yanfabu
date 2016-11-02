@@ -1,2 +1,33 @@
 #wrap_findBuy{width: 100%;}
-
+#wrap_findBuy .buy_navTop{width: 100%;height: 1.913rem;border-top: 0.2609rem solid #ff7243;background: #ff4f14;position: relative;}
+#wrap_findBuy .buy_navTop_left{width: 2rem;background: url(../../../img/secondPage_img/back-share.png) no-repeat;background-size: 3.48rem 1.3rem;}
+#wrap_findBuy .buy_navTop_center{font-size: 0.8rem;color: #fff;width: 3.304rem;left: 6.4rem;padding-top: 0.3rem;}
+#wrap_findBuy .buy_navTop_right{width: 2rem;background: url(../../../img/secondPage_img/back-share.png) no-repeat -1rem -0.03rem;background-size: 3.48rem 1.3rem;right: 0.3rem;}
+#wrap_findBuy .buy_navTop span{position: absolute;display: inline-block;height: 100%;}
+#wrap_findBuy .buyProductPic{width: 100%;position: relative;}
+#wrap_findBuy .buyProductPic>.bigPic{width: 100%;height: 16rem;}
+#wrap_findBuy .buyProductPic>span{width: 2.826rem;height: 2.7rem;display: block;background: url(../../../img/secondPage_img/sell-big-icon.png) no-repeat;background-size: 100% 100%;position: absolute;right: 0.304rem;top: 13.826rem;padding: 1rem 0 0 0.7rem;font-size: 0.63rem;color: #fff;}
+#wrap_findBuy .buyProductPic .buyPrice{width: 100%;height: 2.4rem;padding-left: 0.261rem;}
+#wrap_findBuy .buyProductPic .buyPrice span:first-child{display: inline-block;width: 4.0435rem;height: 100%;line-height: 2.4rem;text-align: center;font-size: 0.87rem;color: #f94a4b;font-weight: 600;}
+#wrap_findBuy .buyProductPic .buyPrice span:last-child{display: inline-block;width: 2rem;height: 100%;line-height: 2.4rem;font-size: 0.44rem;color: #bbbbbb;text-decoration: line-through;}
+#wrap_findBuy .buyProductPic .productName{width: 100%;height: 1.3044rem;padding-left: 0.652rem;font-size: 0.79rem;font-weight: 400;color: #000;}
+#wrap_findBuy .buyProductPic>.smallPic{width: 14.7rem;height: 14.7rem;margin-left: 0.6522rem;}
+#wrap_findBuy .buyProductPic>.productContent{width: 100%;height: 8.435rem;font-size: 0.69rem;color: #4c4c4c;padding: 0 0.68rem;line-height: 1.13rem;}
+#wrap_findBuy .buyerGoods{width: 100%;height: 2.826rem;background: #f7f7f7;position: relative;border-bottom: 1px solid #dbdbdb;border-top: 1px solid #dbdbdb;}
+#wrap_findBuy .buyerGoods>img{width: 1.087rem;height: 1.3043rem;position: absolute;top: 0.652rem;left: 0.652rem;}
+#wrap_findBuy .buyerGoods>span:nth-child(2){font-size: 0.782rem;color: #f94a4b;position: absolute;top: 0.9565rem;left: 2rem;z-index: 20;}
+#wrap_findBuy .buyerGoods>a{top: 0.6522rem;position: absolute;font-size: 0.6rem;color: #313170;border: 1px solid #f94a4b;border-radius: 4px;width: 3.13rem;height: 1.435rem;display: inline-block;padding: 0.4rem 0 0 1.304rem;}
+#wrap_findBuy .buyerGoods>a>span{position: absolute;display: block;width: 0.8rem;height: 0.8rem;top: 0.38rem;left: 0.43rem;}
+#wrap_findBuy .buyerGoods>a:nth-child(4)>span{background: url(../../../img/secondPage_img/pic-video.png) no-repeat;background-size: 1.6rem 0.8rem;}
+#wrap_findBuy .buyerGoods>a:nth-child(5)>span{background: url(../../../img/secondPage_img/pic-video.png) no-repeat -0.8rem;background-size: 1.6rem 0.8rem;}
+#wrap_findBuy .buyerGoods>a:nth-child(4){right: 3.8261rem;}
+#wrap_findBuy .buyerGoods>a:nth-child(5){right: 0.435rem;}
+#wrap_findBuy .buyerGoods>span:nth-child(3){width: 3.27rem;height: 2.435rem;display: block;position: absolute;top: 0;left: 4.217rem;background: url(../../../img/secondPage_img/check-icon.png) no-repeat;background-size: 6.5rem 2.435rem;}
+#wrap_findBuy .shopStorefront{width: 100%;height: 1.48rem;background: #ececec;border-bottom: 1px solid #dbdbdb;position: relative;padding-top: 0.5rem;}
+#wrap_findBuy .shopStorefront>span{display: inline-block;position: absolute;background: url(../../../img/secondPage_img/tit-tagicn.png) no-repeat;background-size: 3.13rem 0.7826rem;width: 0.7826rem;height: 0.7826rem;top: 0.35rem;left: 0.435rem;}
+#wrap_findBuy .shopStorefront>p{font-size: 0.522rem;color: #7d7d7d;margin: 0 0 0 1.2rem;}
+#wrap_findBuy .shopStorefront>p>span{color: #ababab;margin-left: 0.4rem;}
+#wrap_findBuy .buyEnterStore{width: 100%;height: 2.609rem;padding: 0.435rem 0 0 0.7rem;margin-bottom: 100px;}
+#wrap_findBuy .buyEnterStore>div{float: left;}
+#wrap_findBuy .buyEnterStore>div:first-child{width: 3.652rem;height: 1.783rem;}
+#wrap_findBuy .buyEnterStore>div:first-child img{width: 100%;height: 100%;}
