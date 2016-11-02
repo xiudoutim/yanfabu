@@ -1,0 +1,48 @@
+#interestGetMorePage1{width: 16rem;background: #ececec;padding: 0 0 2.26rem 0;}
+#interestGetMorePage_title1{height: 2.34rem;width: 16rem;background: #ff5011;padding: 0.32rem 0.32rem 0 0;}
+#goInterest1{height: 1.73rem;width: 2.6rem;text-align: center;float: left;margin-top: 0.2rem;font-size: 1.2rem;color: #fff;}
+#goInterest1 i{display: block;}
+#interestGetMorePage_title1 h2{font-size: 0.77rem;color: #fff;font-family: "微软雅黑";line-height: 2rem;font-weight: normal;
+					width: 13rem;text-align: center;}
+					
+#morePage1_banner{height: 12.43rem;width: 16rem;position: relative;background: #fff;
+					border-bottom: 1px solid #d7d7d7;}
+#morePage1_banner img{height: 6.91rem;width: 16rem;}
+#morePage1_banner span{position: absolute;left: 0.43rem;top:5.43rem;font-size: 0.87rem;color: #fffaca;font-family: "微软雅黑";}
+#morePage1_banner p{font-size: 0.69rem;color: #5e635d;line-height: 1rem;font-family: "微软雅黑";display: block;padding: 0 0.43rem;
+				width: 16rem;margin-top: 0.61rem;}
+				
+.interestGetMoreProduct1{background: #fff;font-family: "微软雅黑";margin-top: 0.43rem;border-top: 1px solid #d7d7d7;
+					border-bottom: 1px solid #d7d7d7;text-align: center;}
+.interestGetMoreProduct1 h2{height: 3.08rem;width: 16rem;font-size: 0.78rem;color: #33373a;text-align: center;
+							line-height: 3.08rem;padding: 0 0.53rem;}
+.interestGetMoreProduct1 ul{width: 16rem;padding: 0 0.53rem;}						
+.interestGetMoreProduct1 ul li:nth-child(1){height: 14.5rem;}
+.interestGetMoreProduct1 ul li:nth-child(1) img{height: 100%;width: 100%;}
+.interestGetMoreProduct1 ul li:nth-child(2){height: 8.52rem;}
+.interestGetMoreProduct1 ul li:nth-child(2) img{height: 100%;width: 100%;}
+
+.morePage_price{height: 2.21rem;width: 16rem;padding: 0 0.53rem;font-family: "微软雅黑";line-height: 2.21rem;}
+.morePage_price span i{font-style: normal;}
+.morePage_price span:nth-child(1){font-size: 0.78rem;color: #d8524f;float: left;}
+.morePage_price span:nth-child(1) i{font-size: 0.45rem;}
+.morePage_price span:nth-child(2){font-size: 0.45rem;color: #bdbdbd;text-decoration: line-through;float: left;margin-left: 0.3rem;}
+.morePage_price span:nth-child(3){font-size: 0.78rem;height: 2rem;width: 2rem;background: url(../../../img/icon/pri-bg.png) no-repeat;
+				background-size: 2rem 2rem;color: #fff;display: inline-block;float: right;}
+.morePage_price span:nth-child(3) i{font-size: 0.45rem;}
+
+.morePage_love{height: 2.69rem;width: 16rem;background: #fafbf6;line-height: 2.69rem;position: relative;}
+.morePage_love span{text-align: center;line-height: 2.69rem;}
+.morePage_love span i{height: 1.39rem;width:1.39rem;background: url(../../../img/icon/detail-footer-nav3.png) no-repeat;
+			background-size: 4.17rem 1.39rem;display: inline-block;vertical-align: middle;}
+.morePage_love span:nth-child(1){font-size: 0.65rem;color: #5c5c5c;width: 4.13rem;position: absolute;left: 0.58rem;}
+.morePage_love span:nth-child(1) i{background-position:0 0;margin-right: 1.05rem;}
+.morePage_love span:nth-child(2){font-size: 0.65rem;color: #5c5c5c;width: 4.13rem;position: absolute;left: 4.71rem;}
+.morePage_love span:nth-child(2) i{background-position:-1.39rem 0;margin-right: 1.05rem;}
+.morePage_love span:nth-child(3){width: 3rem;position: absolute;left: 8.84rem;}
+.morePage_love span:nth-child(4){font-size: 0.74rem;color: #ac352f;width: 4rem;border: 1px solid #fe4b47;height: 1.83rem;
+						position: absolute;right: 0.58rem;margin-top: 0.5rem;line-height: 1.83rem;border-radius: 2px;}
+.morePage_love span:nth-child(4) i{background-position: -2.78rem 0;}
+
+#morePageBottom{height: 2.82rem;background: #e4e4e4;font-size: 0.55rem;color: #ababab;width: 16rem;text-align: center;padding: 0.5rem 0;line-height: 0.78rem;}
+

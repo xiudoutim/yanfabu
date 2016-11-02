@@ -1,0 +1,36 @@
+<!--加载更多的页面-->
+<div id="interestGetMorePage1" ng-controller="getMorePageCtrl1">
+	<div id="interestGetMorePage_title1">
+		<div id="goInterest1" ng-click="backSort()">
+			<i class="fa fa-angle-left"></i>
+		</div>
+		<h2>{{interestGetMoreTitle1.name}}</h2>
+	</div>
+	<div id="morePage1_banner">
+		<img src="{{interestGetMoreTitle1.img_url}}" />
+		<span>{{interestGetMoreTitle1.headline}}</span>
+		<p>{{interestGetMoreTitle1.summary}}</p>
+	</div>
+	<div class="interestGetMoreProduct1" ng-repeat="x in interestGetMoreProduct1">
+		<h2><span>{{x.name}}</span></h2>
+		<ul>
+			<li><img src="{{x.imgtext_list[0].img_url}}"/></li>
+			<li><img src="{{x.imgtext_list[1].img_url}}"/></li>
+		</ul>
+		<div class="morePage_price">
+			<span><i>￥</i>{{x.price}}</span>
+			<span><i>￥</i>{{x.market_price}}</span>
+			<span>{{x.discount}}<i>折</i></span>
+		</div>
+		<div class="morePage_love">
+			<span><i></i>{{x.reviews}}</span>
+			<span><i></i>{{x.fav}}</span>
+			<span></span>
+			<span>购买<i></i></span>
+		</div>
+	</div>
+	<div id="morePageBottom">
+		<p>厦门速煜信息技术有限公司&nbsp;趣品社</p>
+		<p>Copyright&copy;2013-2016备案号：闵ICP备1500279号-2</p>
+	</div>
+</div>
