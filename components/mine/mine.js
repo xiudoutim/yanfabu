@@ -20,3 +20,8 @@ app.controller('mineCtrl', ['$scope','$timeout', function($scope,$timeout){
 	},1000);
 	
 }]);
+app.controller('registCtrl',['$scope',function($scope){
+	$scope.returnMine = function(){
+		window.history.back();
+	}
+}])

@@ -1,8 +1,8 @@
 <div id="wrap_find">
-	<div id="find-top">
+	<div id="find-top"  ng-hide="yearTopFlag">
 		<img src="img/banner1/find-banner-1.jpg" />
 	</div>
-	<div id="find-other-item">
+	<div id="find-other-item"  ng-hide="yearTopFlag">
 		<ul>
 			<li ng-repeat="url in year">
 				<img  ng-src="{{url.img_url}}" />

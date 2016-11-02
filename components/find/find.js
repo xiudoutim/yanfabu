@@ -42,6 +42,7 @@ app.service("ser_find4",['$http',function($http){
 app.controller('findCtrl',['$scope','service2','ser_find1','ser_find2','ser_find3','ser_find4',function($scope,service2,ser_find1,ser_find2,ser_find3,ser_find4){
 //*************************************一级页面的操作
 	$scope.find_changeFlag = false;
+	$scope.yearTopFlag = false;
 	service2.get().success(function(res){
 		$scope.year = res;
 	})
@@ -55,15 +56,18 @@ app.controller('findCtrl',['$scope','service2','ser_find1','ser_find2','ser_find
 			ser_find1.get().success(function(res){
 				$scope.selections = res.discover_list;
 			})
+			$scope.yearTopFlag = false;
 			
 		}else if(count==1){
 			ser_find2.get().success(function(res){
 				$scope.selections = res.discover_list;
 			})
+			$scope.yearTopFlag = true;
 		}else if(count==2){
 			ser_find3.get().success(function(res){
 				$scope.selections = res.discover_list;
 			})
+			$scope.yearTopFlag = true;
 		}
 	}
 	//点击加载更多数据
@@ -72,4 +76,9 @@ app.controller('findCtrl',['$scope','service2','ser_find1','ser_find2','ser_find
 	})
 //*******************************************一级页面操作结束
 	
+}])
+app.controller('secPageGoodCtrl',['$scope',function($scope){
+	$scope.returnFind = function(){
+		window.history.back();
+	}
 }])

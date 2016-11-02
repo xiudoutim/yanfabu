@@ -8,7 +8,7 @@
 #wrap_regist .regist_form .form_tel{margin-bottom: 0.263rem;}
 #wrap_regist .regist_form .form_tel,#wrap_regist .regist_form .form_pwd{width: 15rem;height: 1.957rem;border: 3px solid #e0e0e0;position: relative;margin-bottom: 0.78rem;}
 #wrap_regist .regist_form .form_tel img,#wrap_regist .regist_form .form_pwd img{width: 1.174rem;height: 1.174rem;margin: 0.2174rem 0 0 0.2174rem;}
-#wrap_regist .regist_form input{position: absolute;top: 0.27rem;left: 1.74rem;height: 1.2rem;width: 13rem;border: none;outline: none;}
+#wrap_regist .regist_form input{position: absolute;top: 0.27rem;left: 1.74rem;height: 1.4rem;width: 13rem;border: none;outline: none;font-size: 0.56rem;}
 #wrap_regist form a{display: block;}
 #wrap_regist .forget_pwd{color: #f84f14;margin-left: 11rem;font-size: 0.65rem;margin-bottom: 0.7rem;}
 #wrap_regist .login_account{width: 15rem;height: 1.74rem;background: #f84f14;text-align: center;line-height: 1.74rem;font-size: 0.55rem;color: #fff;margin-bottom: 0.65rem;}
