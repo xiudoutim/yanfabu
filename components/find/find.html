@@ -11,9 +11,9 @@
 	</div>
 	<div class="find-nav">
 		<ul>
-			<li ng-click="click_change(0)" class="underLine"><a href="">精选</a></li>
-			<li ng-click="click_change(1)"><a href="">晒单</a></li>
-			<li ng-click="click_change(2)"><a href="">新品</a></li>
+			<li ng-click="click_change(0)" ng-class="{true:'underLine1',false:'underLine2'}[underlineChange1]"><a href="">精选</a></li>
+			<li ng-click="click_change(1)" ng-class="{true:'underLine1',false:'underLine2'}[underlineChange2]"><a href="">晒单</a></li>
+			<li ng-click="click_change(2)" ng-class="{true:'underLine1',false:'underLine2'}[underlineChange3]"><a href="">新品</a></li>
 		</ul>
 		<a>+发布</a>
 	</div>

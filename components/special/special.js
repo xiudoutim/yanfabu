@@ -46,6 +46,9 @@ app.controller('specialCtrl', ['$scope','service1','ser1','$timeout', function($
 			}
 			
 		}
+		$scope.addFavors = function(index){
+			res.special_list[index].favors += 1;
+		}
 	});
 	ser1.get().success(function(res){
 		$scope.special2 = res.special_list;
@@ -59,6 +62,9 @@ app.controller('specialCtrl', ['$scope','service1','ser1','$timeout', function($
 				$scope.special2[j].icon_url = 'img/icon1/star.png';
 			}
 			
+		}
+		$scope.addFavors = function(index){
+			res.special_list[index].favors += 1;
 		}
 	});
 	//当轮播图不能动的时候，需要加一个延时，因为这个是异步的
