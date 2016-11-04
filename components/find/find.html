@@ -11,9 +11,9 @@
 	</div>
 	<div class="find-nav">
 		<ul>
-			<li ng-click="click_change(0)" class="underLine"><a href="">精选</a></li>
-			<li ng-click="click_change(1)"><a href="">晒单</a></li>
-			<li ng-click="click_change(2)"><a href="">新品</a></li>
+			<li ng-click="click_change(0)" ng-class="{true:'underLine1',false:'underLine2'}[underlineChange1]"><a href="">精选</a></li>
+			<li ng-click="click_change(1)" ng-class="{true:'underLine1',false:'underLine2'}[underlineChange2]"><a href="">晒单</a></li>
+			<li ng-click="click_change(2)" ng-class="{true:'underLine1',false:'underLine2'}[underlineChange3]"><a href="">新品</a></li>
 		</ul>
 		<a>+发布</a>
 	</div>
@@ -47,7 +47,7 @@
 				<li><a href=""><img src="img/icon2/find_share.png"/>分享</a></li>
 				<li><a href=""><img src="img/icon2/find_like.png"/>喜欢{{data.fav}}</a></li>
 				<li><a href=""><img src="img/icon2/find_message.png"/>补充</a></li>
-				<li><a href=""><img src="img/icon2/find_shopingCar.png"/>购买</a></li>
+				<li><a href="#/findBuyView"><img src="img/icon2/find_shopingCar.png"/>购买</a></li>
 			</ul>
 		</div>
 		<div class="find_list_items" ng-repeat="data2 in selections2" ng-hide="!find_changeFlag">

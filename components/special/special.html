@@ -22,19 +22,19 @@
 	</div>
 	<div id="data-pic">
 		<ul class="special_ul1">
-			<li ng-repeat="x in special">
+			<li ng-repeat="(i,x) in special">
 				<img ng-src="{{x.img_url}}"/>
 				<p ng-bind="x.name"></p>
 				<img class="special_icon" ng-src="{{x.icon_url}}"/>
-				<span class="special_praise">{{x.favors}}</span>
+				<span class="special_praise" ng-click="addFavors(i)">{{x.favors}}</span>
 			</li>
 		</ul>
 		<ul class="special_ul2" ng-hide="special_flag">
-			<li ng-repeat="y in special2">
+			<li ng-repeat="(j,y) in special2">
 				<img ng-src="{{y.img_url}}"/>
 				<p ng-bind="y.name"></p>
 				<img class="special_icon" ng-src="{{y.icon_url}}"/>
-				<span class="special_praise">{{y.favors}}</span>
+				<span class="special_praise" ng-click="addFavors(j)">{{y.favors}}</span>
 			</li>
 		</ul>
 	</div>

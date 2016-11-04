@@ -1,3 +1,54 @@
 <div id="wrap_findBuy">
-	
+	<div class="buy_navTop">
+		<span class="buy_navTop_left" ng-click="returnLast()"></span>
+		<span class="buy_navTop_center">商品详情</span>
+		<span class="buy_navTop_right"></span>
+	</div>
+	<div class="buyProductPic">
+		<img ng-src="{{bigPicViewData.img_url}}" class="bigPic" />
+		<span>{{bigPicViewData.discount}}折</span>
+		<p class="buyPrice">
+			<span>￥{{bigPicViewData.price}}</span>
+			<span>￥{{bigPicViewData.market_price}}</span>
+		</p>
+		<p class="productName">{{bigPicViewData.name}}</p>
+		<img ng-src="{{bigPicViewData.imgtext_list[1].img_url}}" class="smallPic" />
+		<p class="productContent">{{bigPicViewData.imgtext_list[1].content}}</p>
+	</div>
+	<div class="buyerGoods">
+		<img src="img/secondPage_img/buyer-icon.png" />
+		<span>买手验货</span>
+		<span></span>
+		<a href=""><span></span>图解</a>
+		<a href=""><span></span>视频</a>
+	</div>
+	<div class="shopStorefront">
+		<span></span>
+		<p>掌柜店面<span>更多优质商品进入店面查看</span></p>
+	</div>
+	<div class="buyEnterStore">
+		<div>
+			<img ng-src="{{bigPicViewData.store_info.icon}}"/>
+		</div>
+		<div>
+			<p>{{bigPicViewData.store_info.name}}</p>
+			<p>
+				<span ng-repeat="star in starArr track by $index"></span>
+			</p>
+		</div>
+		<div>
+			<a href="">进入店铺></a>
+		</div>
+	</div>
+	<div class="supplement">
+		<p><span>大家补充</span>您才是最佳买手！参与获&nbsp;&nbsp;<span></span>趣圈</p>
+	</div>
+	<div class="supplement_person">
+		<p>补充<span>{{supplements.total}}条</span></p>
+		
+		<div ng-repeat="person in fav_list">
+			<img ng-src="{{person.headimg]}}" />
+		</div>
+		
+	</div>
 </div>
