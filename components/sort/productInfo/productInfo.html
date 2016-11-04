@@ -4,7 +4,7 @@
 			<i class="fa fa-angle-left"></i>
 		</div>
 		<div id='productInfo_input'>
-			<img src="img/icon/search.png"/>
+			<img lazy-src="img/icon/search.png"/>
 			<input type="text" placeholder="所搜您喜欢的专题或商品" />
 			<span>搜索</span>
 		</div>
@@ -13,14 +13,14 @@
 	<div id="sort_productInfo">
 		<ul>
 			<li ng-repeat="y in productInfoArr">
-				<img src="{{y.img_url}}">
+				<img lazy-src="{{y.img_url}}">
 				<div><span class="now_price">￥{{y.price}}</span><span class="old_price">￥{{y.market_price}}</span></div>
 				<p class="interest_product_name">{{y.name}}</p>
 			</li>
 		</ul>
 		<ul>
 			<li ng-repeat="z in productInfoArr2">
-				<img src="{{z.img_url}}">
+				<img lazy-src="{{z.img_url}}">
 				<div><span class="now_price">￥{{z.price}}</span><span class="old_price">￥{{z.market_price}}</span></div>
 				<p class="interest_product_name">{{z.name}}</p>
 			</li>

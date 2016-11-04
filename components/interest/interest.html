@@ -1,15 +1,15 @@
 <div id="interestPage" ng-controller="interestCtrl">
 	<div class="interest_listTop" id="topPrice">
 		<ul>
-			<li><a href=""><i></i><span>元爆款</span></a></li>
-			<li><a href=""><i></i><span>元慧品</span></a></li>
-			<li><a href=""><i></i><span>元专区</span></a></li>
+			<li><a><i></i><span>元爆款</span></a></li>
+			<li><a><i></i><span>元慧品</span></a></li>
+			<li><a><i></i><span>元专区</span></a></li>
 		</ul>
 	</div>
 	<div class="swiper-container">
 		<div class="swiper-wrapper">
 			<div ng-repeat="x in arr" class="swiper-slide">
-				<img ng-src="{{x.img_url}}">
+				<img lazy-src="{{x.img_url}}">
 			</div>
 		</div>
 		<div class="swiper-pagination"></div>
@@ -19,11 +19,11 @@
 	<div id="promotion">
 		<div id="bigPromotion">
 			<ul>
-				<li><a href="#"><img src="img/pai-pic.jpg"></a></li>
-				<li><a href="#"><img src="img/mall-pic.jpg"></a></li>
+				<li><a href="#"><img lazy-src="img/pai-pic.jpg"></a></li>
+				<li><a href="#"><img lazy-src="img/mall-pic.jpg"></a></li>
 			</ul>
 		</div>
-		<div id="bigPromotion_bottom"><img src="img/icon/nianhuo-icon.png"><span
+		<div id="bigPromotion_bottom"><img lazy-src="img/icon/nianhuo-icon.png"><span
 		>年货大促</span></div>
 		<div class="interest_blankBg"></div>
 		<div class="getMore" ng-click="interestGetMore(1)" id="interestproductMore1"><a href="#/getMorePage1"><i class="fa fa-th"></i>点击加载更多</a></div>
@@ -31,9 +31,9 @@
 
 	<div class="interest_listTop">
 		<ul>
-			<li><a href=""><i></i><span>元爆款</span></a></li>
-			<li><a href=""><i></i><span>元慧品</span></a></li>
-			<li><a href=""><i></i><span>元专区</span></a></li>
+			<li><a><i></i><span>元爆款</span></a></li>
+			<li><a><i></i><span>元慧品</span></a></li>
+			<li><a><i></i><span>元专区</span></a></li>
 		</ul>
 	</div>
 <!-- 9.9专区 -->
@@ -46,7 +46,7 @@
 		<img src="{{arr1Top.img_url}}">
 		<ul class="interest_product_list">
 			<li ng-repeat="x in arr1">
-				<img src="{{x.img_url}}">
+				<img lazy-src="{{x.img_url}}">
 				<div><span class="now_price">￥{{x.price}}</span><span class="old_price">￥{{x.market_price}}</span></div>
 				<p class="interest_product_name">{{x.name}}</p>
 			</li>
@@ -60,10 +60,10 @@
 			<span class="interest_price">{{arr2Top.name}}</span>
 			<span class="interest_time">{{arr2Top.headline}}</span>
 		</h2>
-		<img src="{{arr2Top.img_url}}">
+		<img ng-src="{{arr2Top.img_url}}">
 		<ul class="interest_product_list">
 			<li ng-repeat="x in arr2">
-				<img src="{{x.img_url}}">
+				<img lazy-src="{{x.img_url}}">
 				<div><span class="now_price">￥{{x.price}}</span><span class="old_price">￥{{x.market_price}}</span></div>				
 				<p class="interest_product_name">{{x.name}}</p>
 			</li>
@@ -81,7 +81,7 @@
 			<li ng-repeat="x in arr3">
 				<dl>
 					<dt>
-						<img src="{{x.img_url}}">
+						<img lazy-src="{{x.img_url}}">
 					</dt>
 					<dd>
 						<p>{{x.name}}</p>	

@@ -1,4 +1,4 @@
-var app=angular.module('interestModule', []);
+var app=angular.module('interestModule', ['me-lazyload']);
 app.config(['$routeProvider',function($routeProvider) {
 	$routeProvider
 	.when('/interest',{
@@ -62,7 +62,6 @@ app.controller('interestCtrl',['$scope','service3','swiper','$timeout',function(
 	//点击获取更多得到当前下标值
 		$scope.interestGetMore=function(num){
 			clickNumber=num;
-			console.log(clickNumber);
 		}
 	
 		$timeout(function(){
@@ -78,7 +77,7 @@ app.controller('interestCtrl',['$scope','service3','swiper','$timeout',function(
 	//当滑动滚动条时，滑动到一定的距离来控制topPrice的显示与隐藏
 		$(window).on('scroll',function(){
 		  	var toTop=$('body').scrollTop()/23;
-	        if(toTop>16){
+	        if(toTop>19){
 		        $('#topPrice').css({
 		        	display:'block'
 		        })
@@ -91,24 +90,62 @@ app.controller('interestCtrl',['$scope','service3','swiper','$timeout',function(
 }])
 
 //获取更多的二级页面
+var arrGetData=[];
 app.service('serviceMore',['$http',function($http){
 	this.get=function(){
+		//解析出三个json数据存入到数组中，方便后面点击事件
+		$http.get('data/interestproductMore2.json').success(function(res1){
+			arrGetData.push(res1);
+		});
+		$http.get('data/interestproductMore3.json').success(function(res2){
+			arrGetData.push(res2);
+		});
+		$http.get('data/interestproductMore4.json').success(function(res3){
+			arrGetData.push(res3);
+		});
+		
 		return $http.get('data/interestproductMore'+clickNumber+'.json');
-
 	}
 }])
 
 app.controller('getMorePageCtrl',['$scope','serviceMore','swiper','$timeout',function($scope,service,swiper,$timeout){
-	service.get().success(function(res){		
-//		获取更多的页面的数据
+	service.get().success(function(res){
+		$scope.changePage=function(num){
+			//进入到获取更多的页面之后，点击改变数据，由于存在异步的问题，所以出现这里的重复代码
+			clickNumber=num;
+			res=arrGetData[num-2];
+			if(clickNumber!=1){
+				document.getElementById("interestMoreclock").style.backgroundPositionX=0;
+				$scope.interestGetMoreTitle=res.info;
+				$scope.interestGetMoreBanner=res.banner_list;
+				$scope.interestGetMoreProduct=res.item_list;
+			}
+			//控制跳转页面的title部分的class
+			switch (clickNumber){
+				case 2:$scope.isChoosed2=true;$scope.isChoosed3=false;$scope.isChoosed4=false;break;
+				case 3:$scope.isChoosed3=true;$scope.isChoosed2=false;$scope.isChoosed4=false;break;
+				case 4:$scope.isChoosed4=true;$scope.isChoosed2=false;$scope.isChoosed3=false;break;
+				default:$scope.isChoosed2=true;break;
+			}
+		}
+		
+		//		获取更多的页面的数据
 		if(clickNumber!=1){
 			document.getElementById("interestMoreclock").style.backgroundPositionX=0;
 			$scope.interestGetMoreTitle=res.info;
 			$scope.interestGetMoreBanner=res.banner_list;
 			$scope.interestGetMoreProduct=res.item_list;
 		}
+		//控制跳转页面的title部分的class
+		switch (clickNumber){
+			case 2:$scope.isChoosed2=true;break;
+			case 3:$scope.isChoosed3=true;break;
+			case 4:$scope.isChoosed4=true;break;
+			default:$scope.isChoosed2=true;break;
+		}
 	})	
 	
+	//加载更多页面的轮播图
 	$timeout(function(){
 		var mySwiper=new Swiper('.swiper-container',{
 			autoplay:2000,

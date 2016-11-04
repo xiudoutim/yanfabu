@@ -7,15 +7,15 @@
 		<h2>{{interestGetMoreTitle1.name}}</h2>
 	</div>
 	<div id="morePage1_banner">
-		<img src="{{interestGetMoreTitle1.img_url}}" />
+		<img lazy-src="{{interestGetMoreTitle1.img_url}}" />
 		<span>{{interestGetMoreTitle1.headline}}</span>
 		<p>{{interestGetMoreTitle1.summary}}</p>
 	</div>
 	<div class="interestGetMoreProduct1" ng-repeat="x in interestGetMoreProduct1">
 		<h2><span>{{x.name}}</span></h2>
 		<ul>
-			<li><img src="{{x.imgtext_list[0].img_url}}"/></li>
-			<li><img src="{{x.imgtext_list[1].img_url}}"/></li>
+			<li><img lazy-src="{{x.imgtext_list[0].img_url}}"/></li>
+			<li><img lazy-src="{{x.imgtext_list[1].img_url}}"/></li>
 		</ul>
 		<div class="morePage_price">
 			<span><i>￥</i>{{x.price}}</span>

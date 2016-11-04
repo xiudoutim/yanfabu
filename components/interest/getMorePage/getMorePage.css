@@ -5,14 +5,18 @@
 #goInterest i{display: block;}
 #interestGetMorePage_title h2{font-size: 0.77rem;color: #fff;font-family: "微软雅黑";line-height: 2rem;font-weight: normal;width: 13rem;text-align: center;}
 #interestGetMorePage .interest_listTop{height: 2.17rem;width: 16rem;border-bottom: 1px solid #dcdcdc;background: #fff;}
-#interestGetMorePage .interest_listTop ul{height: 100%;width: 100%;padding:0.2rem 0;}
-#interestGetMorePage .interest_listTop ul li{height: 1.69rem;width: 33.3%;float: left;text-align: center;border-right: 1px solid #bfbfbf;}
+#interestGetMorePage .interest_listTop ul{height: 100%;width: 100%;}
+#interestGetMorePage .interest_listTop ul li{height: 2.17rem;width: 33.3%;float: left;text-align: center;padding:0.2rem 0 0.2rem 0;}
+#interestGetMorePage .interest_listTop ul li a{height: 1.69rem;width: 100%;border-right: 1px solid #bfbfbf;display: inline-block;text-align: center;line-height: 1.69rem;}
 #interestGetMorePage .interest_listTop ul li i{height: 1rem;width: 2rem;background: url(../../../img/icon/tag-tit.png) no-repeat;
 			display: inline-block;background-size: 6rem 1rem;vertical-align: middle;}
 #interestGetMorePage .interest_listTop ul li:nth-child(1) i{background-position: 0 0;}
 #interestGetMorePage .interest_listTop ul li:nth-child(2) i{background-position: -2rem 0;}
 #interestGetMorePage .interest_listTop ul li:nth-child(3) i{background-position: -4rem 0;}
 #interestGetMorePage .interest_listTop ul li a span{font-size: 0.69rem;color: #767676;font-family: '微软雅黑';line-height: 1.69rem;}
+
+#interestGetMorePage .interest_listTop ul .choosed{border-bottom: 3px solid #f95c25;}
+#interestGetMorePage .interest_listTop ul .blurChoose{border-bottom: 3px solid #fff;}
 
 #interestGetMorePage .swiper-container{height: 7.5rem;width: 16rem;overflow: hidden;}
 #interestGetMorePage .swiper-slide img{height: 7.5rem;width: 16rem;}

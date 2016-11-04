@@ -8,16 +8,16 @@
 	</div>
 	<div class="interest_listTop">
 		<ul>
-			<li><a href=""><i></i><span>元爆款</span></a></li>
-			<li><a href=""><i></i><span>元慧品</span></a></li>
-			<li><a href=""><i></i><span>元专区</span></a></li>
+			<li ng-class="{true:'choosed',false:'blurChoose'}[isChoosed2]" ng-click="changePage(2)"><a><i></i><span>元爆款</span></a></li>
+			<li ng-class="{true:'choosed',false:'blurChoose'}[isChoosed3]" ng-click="changePage(3)"><a><i></i><span>元慧品</span></a></li>
+			<li ng-class="{true:'choosed',false:'blurChoose'}[isChoosed4]" ng-click="changePage(4)"><a><i></i><span>元专区</span></a></li>
 		</ul>
 	</div>
 	<div id="interestGetMorePageInfo">
 		<div class="swiper-container">
 			<div class="swiper-wrapper">
 				<div ng-repeat="x in interestGetMoreBanner" class="swiper-slide">
-					<img ng-src="{{x.img_url}}">
+					<img lazy-src="{{x.img_url}}">
 				</div>
 			</div>
 			<div class="swiper-pagination"></div>
@@ -31,7 +31,7 @@
 		
 		<ul class="interest_product_list">
 			<li ng-repeat="y in interestGetMoreProduct">
-				<img src="{{y.img_url}}">
+				<img lazy-src="{{y.img_url}}">
 				<div><span class="now_price">￥{{y.price}}</span><span class="old_price">￥{{y.market_price}}</span></div>
 				<p class="interest_product_name">{{y.name}}</p>
 			</li>

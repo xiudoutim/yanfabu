@@ -1,4 +1,4 @@
-var app=angular.module('sortModule', []);
+var app=angular.module('sortModule', ['me-lazyload']);
 app.config(['$routeProvider',function($routeProvider) {
 	$routeProvider
 	.when('/sort',{
@@ -44,13 +44,24 @@ app.service('serviceSouSuo',['$http',function($http){
 
 app.controller('sousuoPageCtrl',['$scope','serviceSouSuo',function($scope,service){
 	service.get().success(function(res){
-	$scope.sousuoPageArr=res.hot_list;
-});
+		$scope.sousuoPageArr=res.hot_list;
+	});
 	
 	$scope.backSort=function(){
 		window.history.back();
 	}
-
+	
+	$scope.arrAddHistory=[];
+	$scope.addHistory = function(){
+		if($scope.text1!=""){
+			$scope.arrAddHistory.push($scope.text1);
+		}
+		$scope.text1="";
+	}
+	
+	$scope.clearAll=function(){
+		$scope.arrAddHistory=[];
+	}
 }])
 
 //商品列表的详细信息页面
@@ -65,7 +76,6 @@ var moreProductArr=[];
 app.controller('productInfoCtrl',['$scope','serviceInfo',function($scope,service){
 	service.get().success(function(res){
 		$scope.productSortName=res.category_info;
-//		console.log(res.item_list.length);
 		if(res.item_list.length/2<=8){
 			$scope.getMore=false;
 			$scope.productInfoArr=res.item_list;

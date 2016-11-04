@@ -8,7 +8,7 @@
 		<ul>
 			<li ng-repeat="x in sortArr">
 				<a href="#/productInfo" ng-click='setId(x.id)'>
-					<img src="{{x.icon}}">
+					<img ng-src="{{x.icon}}">
 					<span>{{x.name}}</span>
 				</a>
 			</li>
