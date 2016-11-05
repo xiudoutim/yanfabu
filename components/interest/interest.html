@@ -1,9 +1,9 @@
 <div id="interestPage" ng-controller="interestCtrl">
 	<div class="interest_listTop" id="topPrice">
-		<ul>
-			<li><a><i></i><span>元爆款</span></a></li>
-			<li><a><i></i><span>元慧品</span></a></li>
-			<li><a><i></i><span>元专区</span></a></li>
+		<ul ng-controller="Scrollcontroller">
+			<li ng-click="scrollTo(1)"><a href="javascript:void(0)"><i></i><span>元爆款</span></a></li>
+			<li ng-click="scrollTo(2)"><a href="javascript:void(0)"><i></i><span>元慧品</span></a></li>
+			<li ng-click="scrollTo(3)"><a href="javascript:void(0)"><i></i><span>元专区</span></a></li>
 		</ul>
 	</div>
 	<div class="swiper-container">
@@ -30,10 +30,10 @@
 	</div>
 
 	<div class="interest_listTop">
-		<ul>
-			<li><a><i></i><span>元爆款</span></a></li>
-			<li><a><i></i><span>元慧品</span></a></li>
-			<li><a><i></i><span>元专区</span></a></li>
+		<ul ng-controller="Scrollcontroller">
+			<li ng-click="scrollTo(1)"><a href="javascript:void(0)"><i></i><span>元爆款</span></a></li>
+			<li ng-click="scrollTo(2)"><a href="javascript:void(0)"><i></i><span>元慧品</span></a></li>
+			<li ng-click="scrollTo(3)"><a href="javascript:void(0)"><i></i><span>元专区</span></a></li>
 		</ul>
 	</div>
 <!-- 9.9专区 -->

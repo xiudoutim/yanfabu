@@ -89,6 +89,26 @@ app.controller('interestCtrl',['$scope','service3','swiper','$timeout',function(
 	      })
 }])
 
+app.controller('Scrollcontroller',['$scope','$location','$anchorScroll',function($scope,$location,$anchorScroll){
+//	$scope.click=function($event){
+//		console.log($event);
+//		$event.preventDefault();
+//		$event.stopPropagation();
+//	}
+	$scope.scrollTo=function(num,$event){
+		console.log(num);
+		switch (num){
+			case 1:$location.hash('interest_money_nine');
+				break;
+			case 2:$location.hash('interest_money_nineteen');
+				break;
+			case 3:$location.hash('interest_money_twentyNine');
+				break;
+		}
+		$anchorScroll();
+	};
+}]);
+
 //获取更多的二级页面
 var arrGetData=[];
 app.service('serviceMore',['$http',function($http){
