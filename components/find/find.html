@@ -5,7 +5,7 @@
 	<div id="find-other-item"  ng-hide="yearTopFlag">
 		<ul>
 			<li ng-repeat="url in year">
-				<img  ng-src="{{url.img_url}}" />
+				<img  lazy-src="{{url.img_url}}" />
 			</li>
 		</ul>
 	</div>
@@ -20,7 +20,7 @@
 	<div class="find_list_content">
 		<div class="find_list_items" ng-repeat="data in selections">
 			<h2>{{data.name}}</h2>
-			<img ng-src="{{data.img_url}}"/>
+			<img lazy-src="{{data.img_url}}"/>
 			<div class="items_price">
 				<p>{{data.review_content}}</p>
 				<span>￥{{data.price}}</span>
@@ -33,7 +33,7 @@
 				</div>
 			</div>
 			<div class="user_information">
-				<img ng-src="{{data.user_info.headimg}}" />
+				<img lazy-src="{{data.user_info.headimg}}" />
 				<p><img src="img/icon2/boy.png"/><span>{{data.user_info.nickname}}</span></p>
 				<p><img src="img/icon2/icon_clock.png"/><span>{{data.add_time}}</span></p>
 				<img src="img/icon2/dengji1.png" id="find_dengji" />
@@ -52,7 +52,7 @@
 		</div>
 		<div class="find_list_items" ng-repeat="data2 in selections2" ng-hide="!find_changeFlag">
 			<h2>{{data2.name}}</h2>
-			<img ng-src="{{data2.img_url}}"/>
+			<img lazy-src="{{data2.img_url}}"/>
 			<div class="items_price">
 				<p>{{data2.review_content}}</p>
 				<span>￥{{data2.price}}</span>
@@ -65,7 +65,7 @@
 				</div>
 			</div>
 			<div class="user_information">
-				<img ng-src="{{data2.user_info.headimg}}" />
+				<img lazy-src="{{data2.user_info.headimg}}" />
 				<p><img src="img/icon2/boy.png"/><span>{{data2.user_info.nickname}}</span></p>
 				<p><img src="img/icon2/icon_clock.png"/><span>{{data2.add_time}}</span></p>
 			</div>
@@ -81,4 +81,13 @@
 	</div>
 	
 	<a href="" id="find_btn-load-more" ng-click="find_changeFlag = !find_changeFlag" ng-hide="find_changeFlag" ><span></span>点击加载更多</a>
+</div>
+
+<div class="loading1" ng-hide="loadingFlag1">
+	<div class="loadClass1">
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+	</div>
 </div>

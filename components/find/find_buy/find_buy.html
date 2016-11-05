@@ -46,9 +46,17 @@
 	<div class="supplement_person">
 		<p>补充<span>{{supplements.total}}条</span></p>
 		
-		<div ng-repeat="person in fav_list">
-			<img ng-src="{{person.headimg]}}" />
+		<div>
+			<img ng-src="{{headImg.headimg}}"  ng-repeat="headImg in favList"/>
 		</div>
 		
 	</div>
+	
+	<div ng-repeat="pinjia in evaluate" class="pinjiaBlock">
+		<img ng-src="{{pinjia.headimg}}" />
+		<span class="userName">{{pinjia.nickname}}</span>
+		<div class="pjTime"><span>{{pinjia.pub_date}}</span><span>{{pinjia.pub_time}}</span></div>
+		<p>{{pinjia.comment}}</p>
+	</div>
+	<div class="kongbai"></div>
 </div>

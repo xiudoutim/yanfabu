@@ -12,7 +12,7 @@
 #wrap_findBuy .buyProductPic .buyPrice span:last-child{display: inline-block;width: 2rem;height: 100%;line-height: 2.4rem;font-size: 0.44rem;color: #bbbbbb;text-decoration: line-through;}
 #wrap_findBuy .buyProductPic .productName{width: 100%;height: 1.3044rem;padding-left: 0.652rem;font-size: 0.79rem;font-weight: 400;color: #000;}
 #wrap_findBuy .buyProductPic>.smallPic{width: 14.7rem;height: 14.7rem;margin-left: 0.6522rem;}
-#wrap_findBuy .buyProductPic>.productContent{width: 100%;height: 8.435rem;font-size: 0.69rem;color: #4c4c4c;padding: 0 0.68rem;line-height: 1.13rem;}
+#wrap_findBuy .buyProductPic>.productContent{width: 100%;height: 5rem;font-size: 0.69rem;color: #4c4c4c;padding: 0 0.68rem;line-height: 1.13rem;}
 #wrap_findBuy .buyerGoods{width: 100%;height: 2.826rem;background: #f7f7f7;position: relative;border-bottom: 1px solid #dbdbdb;border-top: 1px solid #dbdbdb;}
 #wrap_findBuy .buyerGoods>img{width: 1.087rem;height: 1.3043rem;position: absolute;top: 0.652rem;left: 0.652rem;}
 #wrap_findBuy .buyerGoods>span:nth-child(2){font-size: 0.782rem;color: #f94a4b;position: absolute;top: 0.9565rem;left: 2rem;z-index: 20;}
@@ -39,8 +39,15 @@
 #wrap_findBuy .supplement p{width: 15.48rem;height: 0.87rem;line-height: 0.87rem;font-size: 0.55rem;color: #ababab;}
 #wrap_findBuy .supplement p span:first-child{float:left;display: inline-block;width: 3.7826rem;height: 100%;line-height: 0.87rem;color: #7d7d7d;background: url(../../../img/secondPage_img/supplement.jpg) no-repeat left;padding-left: 0.957rem;}
 #wrap_findBuy .supplement p span:nth-child(2){display: inline-block;width: 0.6087rem;height: 0.6087rem;background: url(../../../img/secondPage_img/supplement2.jpg) no-repeat;background-size: 100% 100%;position: absolute;top: 0.47rem;left: 10.6rem;}
-#wrap_findBuy .supplement_person{width: 100%;height: 3.61rem;padding-left:0.65rem;margin-bottom: 100px;}
+#wrap_findBuy .supplement_person{width: 100%;height: 3.04rem;padding-left:0.65rem;border-bottom: 1px solid #dcdcdc;}
 #wrap_findBuy .supplement_person p:first-child{color: #4c6666;font-size: 0.7rem;margin-top: 0.87rem;}
 #wrap_findBuy .supplement_person p:first-child span{color: #b19898;font-size: 0.57rem;margin-left: 0.348rem;}
-#wrap_findBuy .supplement_person div img{width: 1.348rem;height: 1.348rem;border-radius: 50%;}
-#wrap_findBuy .supplement_person div{}
+#wrap_findBuy .supplement_person div img{width: 1.348rem;height: 1.348rem;border-radius: 50%;float: left;margin-right: 5px;border: 2px solid #bee6ff;}
+#wrap_findBuy .supplement_person div{margin-top: 5px;margin-left: 2rem;}
+#wrap_findBuy .pinjiaBlock{font-size: 0.6rem;border-bottom: 1px solid #f8f8f8;background: #f8f8f8;width: 100%;padding: 0.61rem 0 0 0.61rem;position: relative;border-bottom: 1px solid #d4d4d4;}
+#wrap_findBuy .pinjiaBlock img{width: 1.348rem;height: 1.348rem;border-radius: 50%;border: 2px solid #bee6ff;}
+#wrap_findBuy .pinjiaBlock .userName{position: absolute;top: 0.6rem;left: 2.1rem;}
+#wrap_findBuy .pinjiaBlock .pjTime{position: absolute;top: 1.3rem;left: 2.1rem;}
+#wrap_findBuy .pinjiaBlock .pjTime span:first-child{margin-right: 10px;}
+#wrap_findBuy .pinjiaBlock p{padding: 0.522rem 0;}
+#wrap_findBuy .kongbai{width: 100%;height: 2.39rem;}

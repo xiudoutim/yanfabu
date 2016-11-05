@@ -1,4 +1,4 @@
-var app=angular.module('findModule', []);
+var app=angular.module('findModule', ['me-lazyload']);
 app.config(['$routeProvider',function($routeProvider) {
 	$routeProvider
 	.when('/find',{
@@ -52,7 +52,7 @@ app.service('ser_find5',['$http',function($http){
 	}
 }]);
 //*************************************一级页面cotroller的操作
-app.controller('findCtrl',['$scope','service2','ser_find1','ser_find2','ser_find3','ser_find4',function($scope,service2,ser_find1,ser_find2,ser_find3,ser_find4){
+app.controller('findCtrl',['$scope','service2','ser_find1','ser_find2','ser_find3','ser_find4','$timeout',function($scope,service2,ser_find1,ser_find2,ser_find3,ser_find4,$timeout){
 
 	$scope.find_changeFlag = false;
 	$scope.yearTopFlag = false;
@@ -98,6 +98,11 @@ app.controller('findCtrl',['$scope','service2','ser_find1','ser_find2','ser_find
 	ser_find4.get().success(function(res){
 		$scope.selections2 = res.discover_list;
 	})
+	
+	$scope.loadingFlag1 = false;
+	$timeout(function(){
+		$scope.loadingFlag1 = true;
+	},3000)
 
 	
 }])
@@ -113,12 +118,14 @@ app.controller('secPageGoodCtrl',['$scope',function($scope){
 app.controller('findBuyCtrl',['$scope','ser_find5',function($scope,ser_find5){
 	ser_find5.get().success(function(res){
 		$scope.bigPicViewData = res.info;
+//		$scope.fav_list = res.fav_list;
 		$scope.returnLast = function(){
 			window.history.back();
 		}
 		$scope.starArr =[];
 		$scope.starArr.length = parseInt(res.info.store_info.star);
 		$scope.supplements = res.pagenav;
-		$scope.fav_list = res.fav_list;
+		$scope.favList = res.fav_list;
+		$scope.evaluate = res.review_list;
 	})
 }])
