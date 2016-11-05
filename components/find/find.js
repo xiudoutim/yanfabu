@@ -52,7 +52,7 @@ app.service('ser_find5',['$http',function($http){
 	}
 }]);
 //*************************************一级页面cotroller的操作
-app.controller('findCtrl',['$scope','service2','ser_find1','ser_find2','ser_find3','ser_find4',function($scope,service2,ser_find1,ser_find2,ser_find3,ser_find4){
+app.controller('findCtrl',['$scope','service2','ser_find1','ser_find2','ser_find3','ser_find4','$timeout',function($scope,service2,ser_find1,ser_find2,ser_find3,ser_find4,$timeout){
 
 	$scope.find_changeFlag = false;
 	$scope.yearTopFlag = false;
@@ -98,6 +98,11 @@ app.controller('findCtrl',['$scope','service2','ser_find1','ser_find2','ser_find
 	ser_find4.get().success(function(res){
 		$scope.selections2 = res.discover_list;
 	})
+	
+	$scope.loadingFlag1 = false;
+	$timeout(function(){
+		$scope.loadingFlag1 = true;
+	},3000)
 
 	
 }])

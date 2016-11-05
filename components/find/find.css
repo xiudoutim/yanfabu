@@ -38,3 +38,11 @@
 #find_btn-load-more span{display: inline-block;width: 0.5704rem;height: 0.5704rem;background: url(../../img/icon/more-icon.png) no-repeat;background-size: 100% 100%;margin-left: 5.48rem;margin-right: 8px;}
 #wrap_find #find_up{position: absolute;width: 0.5rem;height: 0.5rem;border: 2px solid #f0f0f0;transform: rotateZ(45deg);background: #fff;top: -0.25rem;left: 0.4rem;border-bottom: none;border-right: none;}
 #wrap_find #find_dengji{position: absolute;top: 5px;right: 13px;width: 1.3rem;height: 0.87rem;}
+/*添加loading*/
+.loading1 {height: 24rem;left: 0;position: fixed;top: 0;width: 100%;z-index: 1000; background: #fff;}
+.loadClass1{width: 70px;height: 60px;margin-left: 45%;margin-top: 9.8rem;animation: loading linear 1s infinite;}
+.loadClass1 div{width: 20px;height: 20px;border-radius: 50%;background: #FF0000;float: left;margin-right: 15px;margin-bottom: 10px;}
+@keyframes loading{
+	from{transform: rotateZ(0deg);}
+	to{transform: rotateZ(360deg);}
+}
