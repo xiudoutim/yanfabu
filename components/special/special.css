@@ -16,3 +16,11 @@
 #wrap_special #data-pic li p{width: 100%;text-align: left;padding-left: 0.4174rem;color: #565656;font-size: 0.6087rem;font-weight: 400;}
 #wrap_special #data-pic .special_icon{width: 2.826rem;height: 2.826rem;position: absolute;top: 0;left: 0;}
 #wrap_special #data-pic .special_praise{position: absolute;top: 10px;right: 10px;width: 1.913rem;height: 2.4783rem;background: url(../../img/icon/icon2.png) no-repeat;background-size: 100% 100%;padding-top: 1.7rem;font-size: 0.44rem;color: #fff;}
+/*添加loading*/
+.loading {height: 24rem;left: 0;position: fixed;top: 0;width: 100%;z-index: 1000; background: #fff;}
+.loadClass{width: 70px;height: 60px;margin-left: 45%;margin-top: 9.8rem;animation: loading linear 1s infinite;}
+.loadClass div{width: 20px;height: 20px;border-radius: 50%;background: #FF0000;float: left;margin-right: 15px;margin-bottom: 10px;}
+@keyframes loading{
+	from{transform: rotateZ(0deg);}
+	to{transform: rotateZ(360deg);}
+}

@@ -1,4 +1,4 @@
-var app = angular.module('specialModule', []);
+var app = angular.module('specialModule', ['me-lazyload']);
 app.config(['$routeProvider',function($routeProvider) {
 	$routeProvider
 	.when('/special',{
@@ -49,6 +49,10 @@ app.controller('specialCtrl', ['$scope','service1','ser1','$timeout', function($
 		$scope.addFavors = function(index){
 			res.special_list[index].favors += 1;
 		}
+		$scope.loadingFlag = false;
+		$timeout(function(){
+			$scope.loadingFlag = true;
+		},3000)
 	});
 	ser1.get().success(function(res){
 		$scope.special2 = res.special_list;

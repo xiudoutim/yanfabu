@@ -1,4 +1,4 @@
-var app=angular.module('findModule', []);
+var app=angular.module('findModule', ['me-lazyload']);
 app.config(['$routeProvider',function($routeProvider) {
 	$routeProvider
 	.when('/find',{
@@ -113,12 +113,14 @@ app.controller('secPageGoodCtrl',['$scope',function($scope){
 app.controller('findBuyCtrl',['$scope','ser_find5',function($scope,ser_find5){
 	ser_find5.get().success(function(res){
 		$scope.bigPicViewData = res.info;
+//		$scope.fav_list = res.fav_list;
 		$scope.returnLast = function(){
 			window.history.back();
 		}
 		$scope.starArr =[];
 		$scope.starArr.length = parseInt(res.info.store_info.star);
 		$scope.supplements = res.pagenav;
-		$scope.fav_list = res.fav_list;
+		$scope.favList = res.fav_list;
+		$scope.evaluate = res.review_list;
 	})
 }])

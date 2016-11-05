@@ -5,8 +5,10 @@
 	</div>
 	<div class="regist_form">
 		<form action="" method="post">
-			<div class="form_tel"><img src="img/icon2/user_icon.png"/><input type="text" placeholder="请输入您的手机号" /></div>
-			<div class="form_pwd"><img src="img/icon2/pwd_icon.png"/><input type="password" placeholder="请输入密码" /></div>
+			<div class="form_tel" name="numberBox"><img src="img/icon2/user_icon.png"/><input type="number" placeholder="请输入您的手机号" name="cell_phone_number" ng-minlength="11" ng-maxlength="11"/></div>
+			<!--<span class="error" ng-if="{numberBox.cell_phone_number.$error.minlength || numberBox.cell_phone_number.$error.maxlength && numberBox.cell_phone_number.$touched}">输入的手机号有误</span>-->
+			<div class="form_pwd" name="pwdBox"><img src="img/icon2/pwd_icon.png"/><input type="password" placeholder="请输入密码" name="login_password" ng-minlength="6" ng-maxlength="32"/></div>
+			<!--<span class="error" ng-if="{pwdBox.login_password.$error.minlength || pwdBox.login_password.$error.maxlength && pwdBox.login_password.$touched}">密码长度必须在6到32位之间</span>-->
 			<a class="forget_pwd">忘记密码？</a>
 			<a class="login_account">登录账户</a>
 			<a class="new_user">新注册用户</a>
