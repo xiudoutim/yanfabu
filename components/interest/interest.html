@@ -1,9 +1,9 @@
-<div id="interestPage" ng-controller="interestCtrl">
+<div id="interestPage">
 	<div class="interest_listTop" id="topPrice">
-		<ul>
-			<li><a><i></i><span>元爆款</span></a></li>
-			<li><a><i></i><span>元慧品</span></a></li>
-			<li><a><i></i><span>元专区</span></a></li>
+		<ul ng-controller="Scrollcontroller">
+			<li ng-click="scrollTo(1)"><a><i></i><span>元爆款</span></a></li>
+			<li ng-click="scrollTo(2)"><a><i></i><span>元慧品</span></a></li>
+			<li ng-click="scrollTo(3)"><a><i></i><span>元专区</span></a></li>
 		</ul>
 	</div>
 	<div class="swiper-container">
@@ -23,17 +23,16 @@
 				<li><a href="#"><img lazy-src="img/mall-pic.jpg"></a></li>
 			</ul>
 		</div>
-		<div id="bigPromotion_bottom"><img lazy-src="img/icon/nianhuo-icon.png"><span
-		>年货大促</span></div>
+		<div id="bigPromotion_bottom"><img lazy-src="img/icon/nianhuo-icon.png"><span>年货大促</span></div>
 		<div class="interest_blankBg"></div>
 		<div class="getMore" ng-click="interestGetMore(1)" id="interestproductMore1"><a href="#/getMorePage1"><i class="fa fa-th"></i>点击加载更多</a></div>
 	</div>
 
 	<div class="interest_listTop">
-		<ul>
-			<li><a><i></i><span>元爆款</span></a></li>
-			<li><a><i></i><span>元慧品</span></a></li>
-			<li><a><i></i><span>元专区</span></a></li>
+		<ul ng-controller="Scrollcontroller">
+			<li ng-click="scrollTo(1)"><a><i></i><span>元爆款</span></a></li>
+			<li ng-click="scrollTo(2)"><a><i></i><span>元慧品</span></a></li>
+			<li ng-click="scrollTo(3)"><a><i></i><span>元专区</span></a></li>
 		</ul>
 	</div>
 <!-- 9.9专区 -->
