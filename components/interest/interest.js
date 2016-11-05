@@ -109,7 +109,10 @@ app.controller('Scrollcontroller',['$scope','$location','$anchorScroll',function
 	};
 }]);
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> xiudou
 //获取更多的二级页面
 var arrGetData=[];
 app.service('serviceMore',['$http',function($http){
