@@ -84,7 +84,7 @@ app.controller('productInfoCtrl',['$scope','serviceInfo',function($scope,service
 			$scope.getMore=true;
 			$scope.productInfoArr=res.item_list.slice(0,16);
 			moreProductArr=res.item_list.slice(16,res.item_list.length);
-			console.log(moreProductArr);
+//			console.log(moreProductArr);
 			
 		}
 	});

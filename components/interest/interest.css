@@ -70,6 +70,7 @@
 					border-right:1px solid #c75674;line-height: 1.56rem;width: 1.74rem;text-align: center;font-size: 0.65rem;color: #b2534f;}
 #interest_money_twentyNine .getMore{margin-bottom: 2.6rem;}
 
-#topPrice{position: fixed;top: 0;z-index: 10;display: none;}
+#topPrice{position: fixed;top: 0;z-index: 10;display: none;text-align: center;}
+.interest_listTop ul li a{height: 1.69rem;width: 33.3%;}
 
 
